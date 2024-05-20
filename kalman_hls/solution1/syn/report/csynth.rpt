@@ -1,0 +1,252 @@
+
+
+================================================================
+== Synthesis Summary Report of 'kalman_filter_top'
+================================================================
++ General Information: 
+    * Date:           Mon May 20 14:16:03 2024
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        kalman_hls
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-----------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+----------+-------------+------------+-----+
+    |                             Modules                             | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |      |          |             |            |     |
+    |                             & Loops                             | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM |    DSP   |      FF     |     LUT    | URAM|
+    +-----------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+----------+-------------+------------+-----+
+    |+ kalman_filter_top                                              |     -|  0.00|      229|  2.290e+03|         -|      230|     -|        no|     -|  44 (20%)|  12169 (11%)|  9317 (17%)|    -|
+    | + kalman_filter_top_Pipeline_VITIS_LOOP_20_1                    |     -|  0.39|        9|     90.000|         -|        9|     -|        no|     -|    6 (2%)|    1129 (1%)|   467 (~0%)|    -|
+    |  o VITIS_LOOP_20_1                                              |     -|  7.30|        7|     70.000|         5|        1|     4|       yes|     -|         -|            -|           -|    -|
+    | + kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4    |     -|  0.39|       38|    380.000|         -|       38|     -|        no|     -|   12 (5%)|    1131 (1%)|    678 (1%)|    -|
+    |  o VITIS_LOOP_27_3_VITIS_LOOP_28_4                              |    II|  7.30|       36|    360.000|         7|        2|    16|       yes|     -|         -|            -|           -|    -|
+    | + kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7    |     -|  0.10|       18|    180.000|         -|       18|     -|        no|     -|         -|     30 (~0%)|   189 (~0%)|    -|
+    |  o VITIS_LOOP_36_6_VITIS_LOOP_37_7                              |     -|  7.30|       16|    160.000|         2|        1|    16|       yes|     -|         -|            -|           -|    -|
+    | + kalman_filter_top_Pipeline_VITIS_LOOP_44_8                    |     -|  0.39|        8|     80.000|         -|        8|     -|        no|     -|         -|    728 (~0%)|   413 (~0%)|    -|
+    |  o VITIS_LOOP_44_8                                              |     -|  7.30|        6|     60.000|         6|        1|     2|       yes|     -|         -|            -|           -|    -|
+    | + kalman_filter_top_Pipeline_VITIS_LOOP_52_10_VITIS_LOOP_53_11  |     -|  0.39|       10|    100.000|         -|       10|     -|        no|     -|         -|    778 (~0%)|    739 (1%)|    -|
+    |  o VITIS_LOOP_52_10_VITIS_LOOP_53_11                            |     -|  7.30|        8|     80.000|         6|        1|     4|       yes|     -|         -|            -|           -|    -|
+    | + kalman_filter_top_Pipeline_VITIS_LOOP_71_13_VITIS_LOOP_72_14  |     -|  0.94|       16|    160.000|         -|       16|     -|        no|     -|    8 (3%)|    975 (~0%)|   516 (~0%)|    -|
+    |  o VITIS_LOOP_71_13_VITIS_LOOP_72_14                            |     -|  7.30|       14|    140.000|         8|        1|     8|       yes|     -|         -|            -|           -|    -|
+    | + kalman_filter_top_Pipeline_VITIS_LOOP_82_17                   |     -|  0.39|       10|    100.000|         -|       10|     -|        no|     -|         -|    691 (~0%)|   419 (~0%)|    -|
+    |  o VITIS_LOOP_82_17                                             |     -|  7.30|        8|     80.000|         6|        1|     4|       yes|     -|         -|            -|           -|    -|
+    | + kalman_filter_top_Pipeline_VITIS_LOOP_89_19_VITIS_LOOP_90_20  |     -|  0.39|       21|    210.000|         -|       21|     -|        no|     -|    4 (1%)|    661 (~0%)|   379 (~0%)|    -|
+    |  o VITIS_LOOP_89_19_VITIS_LOOP_90_20                            |     -|  7.30|       19|    190.000|         5|        1|    16|       yes|     -|         -|            -|           -|    -|
+    | + kalman_filter_top_Pipeline_VITIS_LOOP_98_22_VITIS_LOOP_99_23  |     -|  0.10|       18|    180.000|         -|       18|     -|        no|     -|         -|     18 (~0%)|   186 (~0%)|    -|
+    |  o VITIS_LOOP_98_22_VITIS_LOOP_99_23                            |     -|  7.30|       16|    160.000|         2|        1|    16|       yes|     -|         -|            -|           -|    -|
+    | + kalman_filter_top_Pipeline_VITIS_LOOP_151_1                   |     -|  0.00|       28|    280.000|         -|       28|     -|        no|     -|         -|    559 (~0%)|    635 (1%)|    -|
+    |  o VITIS_LOOP_151_1                                             |    II|  7.30|       26|    260.000|        12|        5|     4|       yes|     -|         -|            -|           -|    -|
+    +-----------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+----------+-------------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++---------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| Interface     | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   |
+|               | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |
++---------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| m_axi_hostmem | 32 -> 32   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          |
++---------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+
+* S_AXILITE Interfaces
++-------------------+------------+---------------+--------+----------+
+| Interface         | Data Width | Address Width | Offset | Register |
++-------------------+------------+---------------+--------+----------+
+| s_axi_CONTROL_BUS | 32         | 6             | 16     | 0        |
++-------------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++-------------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface         | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++-------------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_CONTROL_BUS | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_CONTROL_BUS | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_CONTROL_BUS | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_CONTROL_BUS | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_CONTROL_BUS | x_1      | 0x18   | 32    | W      | Data signal of x                 |                                                                      |
+| s_axi_CONTROL_BUS | x_2      | 0x1c   | 32    | W      | Data signal of x                 |                                                                      |
+| s_axi_CONTROL_BUS | P_1      | 0x24   | 32    | W      | Data signal of P                 |                                                                      |
+| s_axi_CONTROL_BUS | P_2      | 0x28   | 32    | W      | Data signal of P                 |                                                                      |
++-------------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+---------------------------------------+
+| Argument | Direction | Datatype                              |
++----------+-----------+---------------------------------------+
+| z        | in        | ap_fixed<32, 16, AP_TRN, AP_WRAP, 0>* |
+| x        | out       | ap_fixed<32, 16, AP_TRN, AP_WRAP, 0>* |
+| P        | out       | ap_fixed<32, 16, AP_TRN, AP_WRAP, 0>* |
++----------+-----------+---------------------------------------+
+
+* SW-to-HW Mapping
++----------+-------------------+-----------+----------+-------------------------------+
+| Argument | HW Interface      | HW Type   | HW Usage | HW Info                       |
++----------+-------------------+-----------+----------+-------------------------------+
+| z        | s_axi_CONTROL_BUS | memory    |          | name=z offset=16 range=8      |
+| x        | m_axi_hostmem     | interface |          |                               |
+| x        | s_axi_CONTROL_BUS | register  | offset   | name=x_1 offset=0x18 range=32 |
+| x        | s_axi_CONTROL_BUS | register  | offset   | name=x_2 offset=0x1c range=32 |
+| P        | m_axi_hostmem     | interface |          |                               |
+| P        | s_axi_CONTROL_BUS | register  | offset   | name=P_1 offset=0x24 range=32 |
+| P        | s_axi_CONTROL_BUS | register  | offset   | name=P_2 offset=0x28 range=32 |
++----------+-------------------+-----------+----------+-------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Bursts and Widening Missed
++---------------+----------+------------------+-------------------------------------------------------------------------------------------------------+------------+------------------------------+
+| HW Interface  | Variable | Loop             | Problem                                                                                               | Resolution | Location                     |
++---------------+----------+------------------+-------------------------------------------------------------------------------------------------------+------------+------------------------------+
+| m_axi_hostmem | P        | VITIS_LOOP_154_2 | Could not widen since type i32 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | kalman_hls/kalman.cpp:154:27 |
+| m_axi_hostmem | x        | VITIS_LOOP_151_1 | Could not widen since type i32 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | kalman_hls/kalman.cpp:151:23 |
+| m_axi_hostmem |          |                  | Could not burst due to multiple potential writes to the same bundle in the same region.               | 214-224    | kalman_hls/kalman.cpp:151:23 |
++---------------+----------+------------------+-------------------------------------------------------------------------------------------------------+------------+------------------------------+
+
+    * Resolution URL: www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------------------------------------------------+-----+--------+--------------+-----+--------+---------+
+| Name                                                            | DSP | Pragma | Variable     | Op  | Impl   | Latency |
++-----------------------------------------------------------------+-----+--------+--------------+-----+--------+---------+
+| + kalman_filter_top                                             | 44  |        |              |     |        |         |
+|   mul_32s_17ns_48_2_1_U106                                      | 3   |        | r_V          | mul | auto   | 1       |
+|   mul_32s_32s_48_2_1_U99                                        | 3   |        | r_V_1        | mul | auto   | 1       |
+|   ret_V_fu_383_p2                                               | -   |        | ret_V        | sub | fabric | 0       |
+|   r_V_2_fu_416_p2                                               | -   |        | r_V_2        | sub | fabric | 0       |
+|   mul_32s_17ns_48_2_1_U104                                      | -   |        | r_V_3        | sub | fabric | 0       |
+|  + kalman_filter_top_Pipeline_VITIS_LOOP_20_1                   | 6   |        |              |     |        |         |
+|    add_ln20_fu_166_p2                                           | -   |        | add_ln20     | add | fabric | 0       |
+|    add_ln1347_fu_285_p2                                         | -   |        | add_ln1347   | add | fabric | 0       |
+|    mul_32s_32ns_48_2_1_U6                                       | 3   |        | mul_ln1273_2 | mul | auto   | 1       |
+|    add_ln1347_1_fu_308_p2                                       | -   |        | add_ln1347_1 | add | fabric | 0       |
+|    mul_32s_32ns_48_2_1_U8                                       | 3   |        | mul_ln1273_3 | mul | auto   | 1       |
+|    add_ln1347_2_fu_330_p2                                       | -   |        | add_ln1347_2 | add | fabric | 0       |
+|  + kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4   | 12  |        |              |     |        |         |
+|    add_ln27_1_fu_160_p2                                         | -   |        | add_ln27_1   | add | fabric | 0       |
+|    add_ln27_fu_211_p2                                           | -   |        | add_ln27     | add | fabric | 0       |
+|    add_ln1273_fu_192_p2                                         | -   |        | add_ln1273   | add | fabric | 0       |
+|    add_ln29_fu_304_p2                                           | -   |        | add_ln29     | add | fabric | 0       |
+|    mul_32s_32ns_48_2_1_U21                                      | 3   |        | mul_ln1273   | mul | auto   | 1       |
+|    mul_32s_32ns_48_2_1_U22                                      | 3   |        | mul_ln1273_3 | mul | auto   | 1       |
+|    add_ln1347_3_fu_404_p2                                       | -   |        | add_ln1347_3 | add | fabric | 0       |
+|    mul_32s_32ns_48_2_1_U25                                      | 3   |        | mul_ln1273_4 | mul | auto   | 1       |
+|    add_ln1347_fu_426_p2                                         | -   |        | add_ln1347   | add | fabric | 0       |
+|    mul_32s_32ns_48_2_1_U26                                      | 3   |        | mul_ln1273_5 | mul | auto   | 1       |
+|    add_ln1347_4_fu_449_p2                                       | -   |        | add_ln1347_4 | add | fabric | 0       |
+|    add_ln28_fu_282_p2                                           | -   |        | add_ln28     | add | fabric | 0       |
+|  + kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7   | 0   |        |              |     |        |         |
+|    add_ln36_1_fu_108_p2                                         | -   |        | add_ln36_1   | add | fabric | 0       |
+|    add_ln36_fu_120_p2                                           | -   |        | add_ln36     | add | fabric | 0       |
+|    add_ln813_1_fu_164_p2                                        | -   |        | add_ln813_1  | add | fabric | 0       |
+|    P_prior_V_d0                                                 | -   |        | add_ln813    | add | fabric | 0       |
+|    add_ln37_fu_176_p2                                           | -   |        | add_ln37     | add | fabric | 0       |
+|  + kalman_filter_top_Pipeline_VITIS_LOOP_44_8                   | 0   |        |              |     |        |         |
+|    add_ln44_fu_224_p2                                           | -   |        | add_ln44     | add | fabric | 0       |
+|    sub_ln1348_fu_322_p2                                         | -   |        | sub_ln1348   | sub | fabric | 0       |
+|    sub_ln1348_1_fu_345_p2                                       | -   |        | sub_ln1348_1 | sub | fabric | 0       |
+|    sub_ln1348_2_fu_373_p2                                       | -   |        | sub_ln1348_2 | sub | fabric | 0       |
+|    sub_ln1348_3_fu_396_p2                                       | -   |        | sub_ln1348_3 | sub | fabric | 0       |
+|  + kalman_filter_top_Pipeline_VITIS_LOOP_52_10_VITIS_LOOP_53_11 | 0   |        |              |     |        |         |
+|    add_ln52_1_fu_265_p2                                         | -   |        | add_ln52_1   | add | fabric | 0       |
+|    add_ln52_fu_274_p2                                           | -   |        | add_ln52     | add | fabric | 0       |
+|    add_ln1347_fu_517_p2                                         | -   |        | add_ln1347   | add | fabric | 0       |
+|    add_ln1347_2_fu_540_p2                                       | -   |        | add_ln1347_2 | add | fabric | 0       |
+|    add_ln1347_3_fu_574_p2                                       | -   |        | add_ln1347_3 | add | fabric | 0       |
+|    S_V_1_0_fu_618_p2                                            | -   |        | S_V_1_0      | add | fabric | 0       |
+|    add_ln53_fu_421_p2                                           | -   |        | add_ln53     | add | fabric | 0       |
+|  + kalman_filter_top_Pipeline_VITIS_LOOP_71_13_VITIS_LOOP_72_14 | 8   |        |              |     |        |         |
+|    add_ln71_1_fu_179_p2                                         | -   |        | add_ln71_1   | add | fabric | 0       |
+|    add_ln71_fu_188_p2                                           | -   |        | add_ln71     | add | fabric | 0       |
+|    add_ln73_fu_355_p2                                           | -   |        | add_ln73     | add | fabric | 0       |
+|    mul_48s_32s_64_5_1_U53                                       | 4   |        | mul_ln1273   | mul | auto   | 4       |
+|    mul_48s_32s_64_5_1_U54                                       | 4   |        | mul_ln1273_2 | mul | auto   | 4       |
+|    add_ln1347_fu_373_p2                                         | -   |        | add_ln1347   | add | fabric | 0       |
+|    add_ln72_fu_264_p2                                           | -   |        | add_ln72     | add | fabric | 0       |
+|  + kalman_filter_top_Pipeline_VITIS_LOOP_82_17                  | 0   |        |              |     |        |         |
+|    add_ln82_fu_285_p2                                           | -   |        | add_ln82     | add | fabric | 0       |
+|    add_ln1347_fu_370_p2                                         | -   |        | add_ln1347   | add | fabric | 0       |
+|    add_ln1347_1_fu_392_p2                                       | -   |        | add_ln1347_1 | add | fabric | 0       |
+|  + kalman_filter_top_Pipeline_VITIS_LOOP_89_19_VITIS_LOOP_90_20 | 4   |        |              |     |        |         |
+|    add_ln89_1_fu_162_p2                                         | -   |        | add_ln89_1   | add | fabric | 0       |
+|    add_ln89_fu_171_p2                                           | -   |        | add_ln89     | add | fabric | 0       |
+|    add_ln91_fu_322_p2                                           | -   |        | add_ln91     | add | fabric | 0       |
+|    mul_17ns_32s_48_2_1_U80                                      | 2   |        | mul_ln818    | mul | auto   | 1       |
+|    mul_17ns_32s_48_2_1_U81                                      | 2   |        | mul_ln1347   | mul | auto   | 1       |
+|    add_ln1347_fu_340_p2                                         | -   |        | add_ln1347   | add | fabric | 0       |
+|    add_ln90_fu_257_p2                                           | -   |        | add_ln90     | add | fabric | 0       |
+|  + kalman_filter_top_Pipeline_VITIS_LOOP_98_22_VITIS_LOOP_99_23 | 0   |        |              |     |        |         |
+|    add_ln98_1_fu_119_p2                                         | -   |        | add_ln98_1   | add | fabric | 0       |
+|    add_ln98_fu_131_p2                                           | -   |        | add_ln98     | add | fabric | 0       |
+|    add_ln100_fu_175_p2                                          | -   |        | add_ln100    | add | fabric | 0       |
+|    P_init_V_d0                                                  | -   |        | sub_ln813    | sub | fabric | 0       |
+|    add_ln99_fu_187_p2                                           | -   |        | add_ln99     | add | fabric | 0       |
+|  + kalman_filter_top_Pipeline_VITIS_LOOP_151_1                  | 0   |        |              |     |        |         |
+|    add_ln151_fu_275_p2                                          | -   |        | add_ln151    | add | fabric | 0       |
+|    add_ln153_fu_323_p2                                          | -   |        | add_ln153    | add | fabric | 0       |
+|    add_ln156_fu_367_p2                                          | -   |        | add_ln156    | add | fabric | 0       |
+|    add_ln156_1_fu_382_p2                                        | -   |        | add_ln156_1  | add | fabric | 0       |
+|    add_ln156_2_fu_397_p2                                        | -   |        | add_ln156_2  | add | fabric | 0       |
+|    add_ln156_3_fu_412_p2                                        | -   |        | add_ln156_3  | add | fabric | 0       |
++-----------------------------------------------------------------+-----+--------+--------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++---------------------------------------------------------------+------+------+--------+-----------+---------+------+---------+
+| Name                                                          | BRAM | URAM | Pragma | Variable  | Storage | Impl | Latency |
++---------------------------------------------------------------+------+------+--------+-----------+---------+------+---------+
+| + kalman_filter_top                                           | 0    | 0    |        |           |         |      |         |
+|   P_prior_V_U                                                 | -    | -    |        | P_prior_V | rom_np  | auto | 1       |
+|   K_V_U                                                       | -    | -    |        | K_V       | ram_s2p | auto | 1       |
+|   temp_V_U                                                    | -    | -    |        | temp_V    | ram_1p  | auto | 1       |
+|   P_init_V_U                                                  | -    | -    |        | P_init_V  | ram_s2p | auto | 1       |
+|   H_U                                                         | -    | -    |        | H         | rom_np  | auto | 1       |
+|  + kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7 | 0    | 0    |        |           |         |      |         |
+|    Q_U                                                        | -    | -    |        | Q         | rom_1p  | auto | 1       |
++---------------------------------------------------------------+------+------+--------+-----------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+------------------------------------------------------------+------------------------------------------------+
+| Type      | Options                                                    | Location                                       |
++-----------+------------------------------------------------------------+------------------------------------------------+
+| inline    |                                                            | kalman_hls/kalman.cpp:15 in kalman_filter      |
+| interface | s_axilite port = return bundle = CONTROL_BUS               | kalman_hls/kalman.cpp:114 in kalman_filter_top |
+| interface | s_axilite port = z bundle = CONTROL_BUS                    | kalman_hls/kalman.cpp:115 in kalman_filter_top |
+| interface | s_axilite port = x bundle = CONTROL_BUS                    | kalman_hls/kalman.cpp:116 in kalman_filter_top |
+| interface | s_axilite port = P bundle = CONTROL_BUS                    | kalman_hls/kalman.cpp:117 in kalman_filter_top |
+| interface | m_axi offset = slave port = x bundle = hostmem depth = 128 | kalman_hls/kalman.cpp:119 in kalman_filter_top |
+| interface | m_axi offset = slave port = P bundle = hostmem depth = 128 | kalman_hls/kalman.cpp:120 in kalman_filter_top |
++-----------+------------------------------------------------------------+------------------------------------------------+
+
+

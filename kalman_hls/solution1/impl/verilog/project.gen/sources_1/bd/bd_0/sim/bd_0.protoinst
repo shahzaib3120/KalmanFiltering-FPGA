@@ -1,0 +1,80 @@
+{
+	"version": "1.0",
+	"modules": {
+		"bd_0": {
+			"proto_instances": {
+				"/hls_inst/m_axi_hostmem": {
+					"interface": "xilinx.com:interface:aximm:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARADDR": { "actual": "m_axi_hostmem_ARADDR"},
+						"ARBURST": { "actual": "m_axi_hostmem_ARBURST"},
+						"ARCACHE": { "actual": "m_axi_hostmem_ARCACHE"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"ARID": { "actual": "m_axi_hostmem_ARID"},
+						"ARLEN": { "actual": "m_axi_hostmem_ARLEN"},
+						"ARLOCK": { "actual": "m_axi_hostmem_ARLOCK"},
+						"ARPROT": { "actual": "m_axi_hostmem_ARPROT"},
+						"ARQOS": { "actual": "m_axi_hostmem_ARQOS"},
+						"ARREADY": { "actual": "m_axi_hostmem_ARREADY"},
+						"ARREGION": { "actual": "m_axi_hostmem_ARREGION"},
+						"ARSIZE": { "actual": "m_axi_hostmem_ARSIZE"},
+						"ARVALID": { "actual": "m_axi_hostmem_ARVALID"},
+						"AWADDR": { "actual": "m_axi_hostmem_AWADDR"},
+						"AWBURST": { "actual": "m_axi_hostmem_AWBURST"},
+						"AWCACHE": { "actual": "m_axi_hostmem_AWCACHE"},
+						"AWID": { "actual": "m_axi_hostmem_AWID"},
+						"AWLEN": { "actual": "m_axi_hostmem_AWLEN"},
+						"AWLOCK": { "actual": "m_axi_hostmem_AWLOCK"},
+						"AWPROT": { "actual": "m_axi_hostmem_AWPROT"},
+						"AWQOS": { "actual": "m_axi_hostmem_AWQOS"},
+						"AWREADY": { "actual": "m_axi_hostmem_AWREADY"},
+						"AWREGION": { "actual": "m_axi_hostmem_AWREGION"},
+						"AWSIZE": { "actual": "m_axi_hostmem_AWSIZE"},
+						"AWVALID": { "actual": "m_axi_hostmem_AWVALID"},
+						"BID": { "actual": "m_axi_hostmem_BID"},
+						"BREADY": { "actual": "m_axi_hostmem_BREADY"},
+						"BRESP": { "actual": "m_axi_hostmem_BRESP"},
+						"BVALID": { "actual": "m_axi_hostmem_BVALID"},
+						"RDATA": { "actual": "m_axi_hostmem_RDATA"},
+						"RID": { "actual": "m_axi_hostmem_RID"},
+						"RLAST": { "actual": "m_axi_hostmem_RLAST"},
+						"RREADY": { "actual": "m_axi_hostmem_RREADY"},
+						"RRESP": { "actual": "m_axi_hostmem_RRESP"},
+						"RVALID": { "actual": "m_axi_hostmem_RVALID"},
+						"WDATA": { "actual": "m_axi_hostmem_WDATA"},
+						"WID": { "actual": "m_axi_hostmem_WID"},
+						"WLAST": { "actual": "m_axi_hostmem_WLAST"},
+						"WREADY": { "actual": "m_axi_hostmem_WREADY"},
+						"WSTRB": { "actual": "m_axi_hostmem_WSTRB"},
+						"WVALID": { "actual": "m_axi_hostmem_WVALID"}
+					}
+				},
+				"/hls_inst/s_axi_CONTROL_BUS": {
+					"interface": "xilinx.com:interface:aximm:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARADDR": { "actual": "s_axi_CONTROL_BUS_ARADDR"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"ARREADY": { "actual": "s_axi_CONTROL_BUS_ARREADY"},
+						"ARVALID": { "actual": "s_axi_CONTROL_BUS_ARVALID"},
+						"AWADDR": { "actual": "s_axi_CONTROL_BUS_AWADDR"},
+						"AWREADY": { "actual": "s_axi_CONTROL_BUS_AWREADY"},
+						"AWVALID": { "actual": "s_axi_CONTROL_BUS_AWVALID"},
+						"BREADY": { "actual": "s_axi_CONTROL_BUS_BREADY"},
+						"BRESP": { "actual": "s_axi_CONTROL_BUS_BRESP"},
+						"BVALID": { "actual": "s_axi_CONTROL_BUS_BVALID"},
+						"RDATA": { "actual": "s_axi_CONTROL_BUS_RDATA"},
+						"RREADY": { "actual": "s_axi_CONTROL_BUS_RREADY"},
+						"RRESP": { "actual": "s_axi_CONTROL_BUS_RRESP"},
+						"RVALID": { "actual": "s_axi_CONTROL_BUS_RVALID"},
+						"WDATA": { "actual": "s_axi_CONTROL_BUS_WDATA"},
+						"WREADY": { "actual": "s_axi_CONTROL_BUS_WREADY"},
+						"WSTRB": { "actual": "s_axi_CONTROL_BUS_WSTRB"},
+						"WVALID": { "actual": "s_axi_CONTROL_BUS_WVALID"}
+					}
+				}
+			}
+		}
+	}
+}

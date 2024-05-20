@@ -1,0 +1,288 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'kalman_filter_top'" level="0">
+<item name = "Date">Mon May 20 14:16:02 2024
+</item>
+<item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
+<item name = "Project">kalman_hls</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.300 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">229, 229, 2.290 us, 2.290 us, 230, 230, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_20_1_fu_192">kalman_filter_top_Pipeline_VITIS_LOOP_20_1, 9, 9, 90.000 ns, 90.000 ns, 9, 9, no</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4_fu_204">kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4, 38, 38, 0.380 us, 0.380 us, 38, 38, no</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7_fu_212">kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7, 18, 18, 0.180 us, 0.180 us, 18, 18, no</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_44_8_fu_219">kalman_filter_top_Pipeline_VITIS_LOOP_44_8, 8, 8, 80.000 ns, 80.000 ns, 8, 8, no</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_52_10_VITIS_LOOP_53_11_fu_233">kalman_filter_top_Pipeline_VITIS_LOOP_52_10_VITIS_LOOP_53_11, 10, 10, 0.100 us, 0.100 us, 10, 10, no</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_71_13_VITIS_LOOP_72_14_fu_244">kalman_filter_top_Pipeline_VITIS_LOOP_71_13_VITIS_LOOP_72_14, 16, 16, 0.160 us, 0.160 us, 16, 16, no</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_82_17_fu_254">kalman_filter_top_Pipeline_VITIS_LOOP_82_17, 10, 10, 0.100 us, 0.100 us, 10, 10, no</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_89_19_VITIS_LOOP_90_20_fu_277">kalman_filter_top_Pipeline_VITIS_LOOP_89_19_VITIS_LOOP_90_20, 21, 21, 0.210 us, 0.210 us, 21, 21, no</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_98_22_VITIS_LOOP_99_23_fu_285">kalman_filter_top_Pipeline_VITIS_LOOP_98_22_VITIS_LOOP_99_23, 18, 18, 0.180 us, 0.180 us, 18, 18, no</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_151_1_fu_293">kalman_filter_top_Pipeline_VITIS_LOOP_151_1, 28, 28, 0.280 us, 0.280 us, 28, 28, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 139, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">0, 44, 11032, 8032, -</column>
+<column name="Memory">0, -, 356, 31, 0</column>
+<column name="Multiplexer">-, -, -, 1115, -</column>
+<column name="Register">-, -, 781, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 20, 11, 17, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="CONTROL_BUS_s_axi_U">CONTROL_BUS_s_axi, 0, 0, 256, 367, 0</column>
+<column name="hostmem_m_axi_U">hostmem_m_axi, 0, 0, 718, 1318, 0</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_151_1_fu_293">kalman_filter_top_Pipeline_VITIS_LOOP_151_1, 0, 0, 559, 635, 0</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_20_1_fu_192">kalman_filter_top_Pipeline_VITIS_LOOP_20_1, 0, 6, 1129, 467, 0</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4_fu_204">kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4, 0, 12, 1131, 678, 0</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7_fu_212">kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7, 0, 0, 30, 189, 0</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_44_8_fu_219">kalman_filter_top_Pipeline_VITIS_LOOP_44_8, 0, 0, 728, 413, 0</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_52_10_VITIS_LOOP_53_11_fu_233">kalman_filter_top_Pipeline_VITIS_LOOP_52_10_VITIS_LOOP_53_11, 0, 0, 778, 739, 0</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_71_13_VITIS_LOOP_72_14_fu_244">kalman_filter_top_Pipeline_VITIS_LOOP_71_13_VITIS_LOOP_72_14, 0, 8, 975, 516, 0</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_82_17_fu_254">kalman_filter_top_Pipeline_VITIS_LOOP_82_17, 0, 0, 691, 419, 0</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_89_19_VITIS_LOOP_90_20_fu_277">kalman_filter_top_Pipeline_VITIS_LOOP_89_19_VITIS_LOOP_90_20, 0, 4, 661, 379, 0</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_98_22_VITIS_LOOP_99_23_fu_285">kalman_filter_top_Pipeline_VITIS_LOOP_98_22_VITIS_LOOP_99_23, 0, 0, 18, 186, 0</column>
+<column name="mul_32s_17ns_48_2_1_U104">mul_32s_17ns_48_2_1, 0, 2, 165, 50, 0</column>
+<column name="mul_32s_17ns_48_2_1_U105">mul_32s_17ns_48_2_1, 0, 2, 165, 50, 0</column>
+<column name="mul_32s_17ns_48_2_1_U106">mul_32s_17ns_48_2_1, 0, 2, 165, 50, 0</column>
+<column name="mul_32s_17ns_48_2_1_U107">mul_32s_17ns_48_2_1, 0, 2, 165, 50, 0</column>
+<column name="mul_32s_32s_48_2_1_U98">mul_32s_32s_48_2_1, 0, 3, 165, 50, 0</column>
+<column name="mul_32s_32s_48_2_1_U99">mul_32s_32s_48_2_1, 0, 3, 165, 50, 0</column>
+<column name="sdiv_48ns_32s_32_52_seq_1_U100">sdiv_48ns_32s_32_52_seq_1, 0, 0, 586, 353, 0</column>
+<column name="sdiv_48ns_32s_32_52_seq_1_U103">sdiv_48ns_32s_32_52_seq_1, 0, 0, 586, 353, 0</column>
+<column name="sdiv_49ns_32s_32_53_seq_1_U101">sdiv_49ns_32s_32_53_seq_1, 0, 0, 598, 360, 0</column>
+<column name="sdiv_49ns_32s_32_53_seq_1_U102">sdiv_49ns_32s_32_53_seq_1, 0, 0, 598, 360, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="H_U">H_ROM_AUTO_1R, 0, 68, 3, 0, 8, 17, 1, 136</column>
+<column name="K_V_U">K_V_RAM_AUTO_1R1W, 0, 64, 4, 0, 8, 32, 1, 256</column>
+<column name="P_init_V_U">P_init_V_RAM_AUTO_1R1W, 0, 64, 8, 0, 16, 32, 1, 512</column>
+<column name="P_prior_V_U">P_prior_V_RAM_1WNR_AUTO_1R1W, 0, 128, 8, 0, 16, 32, 1, 512</column>
+<column name="temp_V_U">temp_V_RAM_AUTO_1R1W, 0, 32, 8, 0, 16, 32, 1, 512</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="r_V_2_fu_416_p2">-, 0, 0, 40, 1, 33</column>
+<column name="r_V_3_fu_442_p2">-, 0, 0, 40, 1, 33</column>
+<column name="ret_V_fu_383_p2">-, 0, 0, 55, 48, 48</column>
+<column name="ap_block_state2_on_subcall_done">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state4_on_subcall_done">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="H_address0">20, 4, 3, 12</column>
+<column name="H_address1">20, 4, 3, 12</column>
+<column name="H_address2">14, 3, 3, 9</column>
+<column name="H_address3">14, 3, 3, 9</column>
+<column name="H_ce0">20, 4, 1, 4</column>
+<column name="H_ce1">20, 4, 1, 4</column>
+<column name="H_ce2">14, 3, 1, 3</column>
+<column name="H_ce3">14, 3, 1, 3</column>
+<column name="K_V_address0">20, 4, 3, 12</column>
+<column name="K_V_address1">14, 3, 3, 9</column>
+<column name="K_V_ce0">20, 4, 1, 4</column>
+<column name="K_V_ce1">14, 3, 1, 3</column>
+<column name="K_V_we0">9, 2, 1, 2</column>
+<column name="P_init_V_address0">20, 4, 4, 16</column>
+<column name="P_init_V_address1">14, 3, 4, 12</column>
+<column name="P_init_V_ce0">20, 4, 1, 4</column>
+<column name="P_init_V_ce1">14, 3, 1, 3</column>
+<column name="P_init_V_we0">9, 2, 1, 2</column>
+<column name="P_prior_V_address0">31, 6, 4, 24</column>
+<column name="P_prior_V_address1">20, 4, 4, 16</column>
+<column name="P_prior_V_ce0">31, 6, 1, 6</column>
+<column name="P_prior_V_ce1">20, 4, 1, 4</column>
+<column name="P_prior_V_ce2">9, 2, 1, 2</column>
+<column name="P_prior_V_ce3">9, 2, 1, 2</column>
+<column name="P_prior_V_d0">14, 3, 32, 96</column>
+<column name="P_prior_V_we0">14, 3, 1, 3</column>
+<column name="ap_NS_fsm">337, 72, 1, 72</column>
+<column name="grp_fu_363_ce">14, 3, 1, 3</column>
+<column name="grp_fu_363_p0">20, 4, 32, 128</column>
+<column name="grp_fu_363_p1">20, 4, 33, 132</column>
+<column name="grp_fu_377_ce">14, 3, 1, 3</column>
+<column name="grp_fu_377_p0">20, 4, 32, 128</column>
+<column name="grp_fu_377_p1">20, 4, 33, 132</column>
+<column name="grp_fu_793_ce">14, 3, 1, 3</column>
+<column name="grp_fu_793_p0">14, 3, 32, 96</column>
+<column name="grp_fu_793_p1">14, 3, 17, 51</column>
+<column name="grp_fu_797_ce">14, 3, 1, 3</column>
+<column name="grp_fu_797_p0">14, 3, 32, 96</column>
+<column name="grp_fu_797_p1">14, 3, 17, 51</column>
+<column name="grp_fu_801_ce">14, 3, 1, 3</column>
+<column name="grp_fu_801_p0">14, 3, 32, 96</column>
+<column name="grp_fu_801_p1">14, 3, 17, 51</column>
+<column name="grp_fu_805_ce">14, 3, 1, 3</column>
+<column name="grp_fu_805_p0">14, 3, 32, 96</column>
+<column name="grp_fu_805_p1">14, 3, 17, 51</column>
+<column name="hostmem_AWVALID">9, 2, 1, 2</column>
+<column name="hostmem_BREADY">9, 2, 1, 2</column>
+<column name="hostmem_WVALID">9, 2, 1, 2</column>
+<column name="temp_V_address0">14, 3, 4, 12</column>
+<column name="temp_V_ce0">14, 3, 1, 3</column>
+<column name="temp_V_we0">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="S_inv_V_0_0_reg_745">32, 0, 32, 0</column>
+<column name="S_inv_V_0_1_reg_750">32, 0, 32, 0</column>
+<column name="S_inv_V_1_0_reg_755">32, 0, 32, 0</column>
+<column name="S_inv_V_1_1_reg_760">32, 0, 32, 0</column>
+<column name="ap_CS_fsm">71, 0, 71, 0</column>
+<column name="det_S_V_reg_697">32, 0, 32, 0</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_151_1_fu_293_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_20_1_fu_192_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4_fu_204_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7_fu_212_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_44_8_fu_219_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_52_10_VITIS_LOOP_53_11_fu_233_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_71_13_VITIS_LOOP_72_14_fu_244_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_82_17_fu_254_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_89_19_VITIS_LOOP_90_20_fu_277_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_kalman_filter_top_Pipeline_VITIS_LOOP_98_22_VITIS_LOOP_99_23_fu_285_ap_start_reg">1, 0, 1, 0</column>
+<column name="r_V_1_reg_692">48, 0, 48, 0</column>
+<column name="r_V_reg_687">48, 0, 48, 0</column>
+<column name="sdiv_ln1303_3_reg_740">32, 0, 32, 0</column>
+<column name="sdiv_ln1303_reg_735">32, 0, 32, 0</column>
+<column name="trunc_ln151_1_reg_788">62, 0, 62, 0</column>
+<column name="trunc_ln3_reg_783">62, 0, 62, 0</column>
+<column name="x_init_V_0">32, 0, 32, 0</column>
+<column name="x_init_V_0_load_reg_623">32, 0, 32, 0</column>
+<column name="x_init_V_1">32, 0, 32, 0</column>
+<column name="x_init_V_1_load_reg_628">32, 0, 32, 0</column>
+<column name="x_init_V_2">32, 0, 32, 0</column>
+<column name="x_init_V_2_load_reg_633">32, 0, 32, 0</column>
+<column name="x_init_V_3">32, 0, 32, 0</column>
+<column name="x_init_V_3_load_reg_638">32, 0, 32, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_CONTROL_BUS_AWVALID">in, 1, s_axi, CONTROL_BUS, scalar</column>
+<column name="s_axi_CONTROL_BUS_AWREADY">out, 1, s_axi, CONTROL_BUS, scalar</column>
+<column name="s_axi_CONTROL_BUS_AWADDR">in, 6, s_axi, CONTROL_BUS, scalar</column>
+<column name="s_axi_CONTROL_BUS_WVALID">in, 1, s_axi, CONTROL_BUS, scalar</column>
+<column name="s_axi_CONTROL_BUS_WREADY">out, 1, s_axi, CONTROL_BUS, scalar</column>
+<column name="s_axi_CONTROL_BUS_WDATA">in, 32, s_axi, CONTROL_BUS, scalar</column>
+<column name="s_axi_CONTROL_BUS_WSTRB">in, 4, s_axi, CONTROL_BUS, scalar</column>
+<column name="s_axi_CONTROL_BUS_ARVALID">in, 1, s_axi, CONTROL_BUS, scalar</column>
+<column name="s_axi_CONTROL_BUS_ARREADY">out, 1, s_axi, CONTROL_BUS, scalar</column>
+<column name="s_axi_CONTROL_BUS_ARADDR">in, 6, s_axi, CONTROL_BUS, scalar</column>
+<column name="s_axi_CONTROL_BUS_RVALID">out, 1, s_axi, CONTROL_BUS, scalar</column>
+<column name="s_axi_CONTROL_BUS_RREADY">in, 1, s_axi, CONTROL_BUS, scalar</column>
+<column name="s_axi_CONTROL_BUS_RDATA">out, 32, s_axi, CONTROL_BUS, scalar</column>
+<column name="s_axi_CONTROL_BUS_RRESP">out, 2, s_axi, CONTROL_BUS, scalar</column>
+<column name="s_axi_CONTROL_BUS_BVALID">out, 1, s_axi, CONTROL_BUS, scalar</column>
+<column name="s_axi_CONTROL_BUS_BREADY">in, 1, s_axi, CONTROL_BUS, scalar</column>
+<column name="s_axi_CONTROL_BUS_BRESP">out, 2, s_axi, CONTROL_BUS, scalar</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, kalman_filter_top, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, kalman_filter_top, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, kalman_filter_top, return value</column>
+<column name="m_axi_hostmem_AWVALID">out, 1, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_AWREADY">in, 1, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_AWADDR">out, 64, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_AWID">out, 1, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_AWLEN">out, 8, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_AWSIZE">out, 3, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_AWBURST">out, 2, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_AWLOCK">out, 2, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_AWCACHE">out, 4, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_AWPROT">out, 3, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_AWQOS">out, 4, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_AWREGION">out, 4, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_AWUSER">out, 1, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_WVALID">out, 1, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_WREADY">in, 1, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_WDATA">out, 32, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_WSTRB">out, 4, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_WLAST">out, 1, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_WID">out, 1, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_WUSER">out, 1, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_ARVALID">out, 1, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_ARREADY">in, 1, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_ARADDR">out, 64, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_ARID">out, 1, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_ARLEN">out, 8, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_ARSIZE">out, 3, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_ARBURST">out, 2, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_ARLOCK">out, 2, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_ARCACHE">out, 4, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_ARPROT">out, 3, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_ARQOS">out, 4, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_ARREGION">out, 4, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_ARUSER">out, 1, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_RVALID">in, 1, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_RREADY">out, 1, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_RDATA">in, 32, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_RLAST">in, 1, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_RID">in, 1, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_RUSER">in, 1, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_RRESP">in, 2, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_BVALID">in, 1, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_BREADY">out, 1, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_BRESP">in, 2, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_BID">in, 1, m_axi, hostmem, pointer</column>
+<column name="m_axi_hostmem_BUSER">in, 1, m_axi, hostmem, pointer</column>
+</table>
+</item>
+</section>
+</profile>

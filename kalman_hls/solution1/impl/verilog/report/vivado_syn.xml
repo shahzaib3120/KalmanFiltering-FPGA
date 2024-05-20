@@ -1,0 +1,262 @@
+<profile>
+<RunData>
+  <RUN_TYPE>synth</RUN_TYPE>
+  <VIVADO_VERSION>v.2022.2</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>10.000</TargetClockPeriod>
+  <AchievedClockPeriod>8.101</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>8.101</CP_FINAL>
+  <CP_ROUTE>NA</CP_ROUTE>
+  <CP_SYNTH>8.101</CP_SYNTH>
+  <CP_TARGET>10.000</CP_TARGET>
+  <SLACK_FINAL>1.899</SLACK_FINAL>
+  <SLACK_ROUTE></SLACK_ROUTE>
+  <SLACK_SYNTH>1.899</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>NA</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>1.899</WNS_FINAL>
+  <WNS_ROUTE>NA</WNS_ROUTE>
+  <WNS_SYNTH>1.899</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>1</BRAM>
+    <CLB>0</CLB>
+    <DSP>56</DSP>
+    <FF>6293</FF>
+    <LATCH>0</LATCH>
+    <LUT>4489</LUT>
+    <SRL>197</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>280</BRAM>
+    <CLB>0</CLB>
+    <DSP>220</DSP>
+    <FF>106400</FF>
+    <LUT>53200</LUT>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="kalman_filter_top" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="27">CONTROL_BUS_s_axi_U H_U K_V_U P_init_V_U P_prior_V_U grp_kalman_filter_top_Pipeline_VITIS_LOOP_151_1_fu_293 grp_kalman_filter_top_Pipeline_VITIS_LOOP_20_1_fu_192 grp_kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4_fu_204 grp_kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7_fu_212 grp_kalman_filter_top_Pipeline_VITIS_LOOP_44_8_fu_219 grp_kalman_filter_top_Pipeline_VITIS_LOOP_52_10_VITIS_LOOP_53_11_fu_233 grp_kalman_filter_top_Pipeline_VITIS_LOOP_71_13_VITIS_LOOP_72_14_fu_244 grp_kalman_filter_top_Pipeline_VITIS_LOOP_82_17_fu_254 grp_kalman_filter_top_Pipeline_VITIS_LOOP_89_19_VITIS_LOOP_90_20_fu_277 grp_kalman_filter_top_Pipeline_VITIS_LOOP_98_22_VITIS_LOOP_99_23_fu_285 hostmem_m_axi_U mul_32s_17ns_48_2_1_U104 mul_32s_17ns_48_2_1_U105 mul_32s_17ns_48_2_1_U106 mul_32s_17ns_48_2_1_U107 mul_32s_32s_48_2_1_U98 mul_32s_32s_48_2_1_U99 sdiv_48ns_32s_32_52_seq_1_U100 sdiv_48ns_32s_32_52_seq_1_U103 sdiv_49ns_32s_32_53_seq_1_U101 sdiv_49ns_32s_32_53_seq_1_U102 temp_V_U</SubModules>
+    <Resources BRAM="1" DSP="56" FF="6293" LUT="4489" LUTRAM="336" LogicLUT="3956" RAMB18="1" SRL="197"/>
+    <LocalResources FF="781" LUT="60" LogicLUT="60"/>
+  </RtlModule>
+  <RtlModule CELL="inst/CONTROL_BUS_s_axi_U" BINDMODULE="kalman_filter_top_CONTROL_BUS_s_axi" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_CONTROL_BUS_s_axi">
+    <Resources FF="249" LUT="276" LUTRAM="64" LogicLUT="212"/>
+    <LocalResources FF="185" LUT="165" LogicLUT="165"/>
+  </RtlModule>
+  <RtlModule CELL="inst/H_U" BINDMODULE="kalman_filter_top_H_ROM_AUTO_1R" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_H_ROM_AUTO_1R">
+    <Resources FF="4" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/K_V_U" BINDMODULE="kalman_filter_top_K_V_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_K_V_RAM_AUTO_1R1W">
+    <Resources FF="64" LUT="65" LUTRAM="64" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/P_init_V_U" BINDMODULE="kalman_filter_top_P_init_V_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_P_init_V_RAM_AUTO_1R1W">
+    <Resources FF="64" LUT="64" LUTRAM="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/P_prior_V_U" BINDMODULE="kalman_filter_top_P_prior_V_RAM_1WNR_AUTO_1R1W" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_P_prior_V_RAM_1WNR_AUTO_1R1W">
+    <Resources FF="128" LUT="168" LUTRAM="112" LogicLUT="56"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_151_1_fu_293" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_151_1">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="549" LUT="257" LogicLUT="257"/>
+    <LocalResources FF="547" LUT="234" LogicLUT="234"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_151_1_fu_293/flow_control_loop_pipe_sequential_init_U" BINDMODULE="kalman_filter_top_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_151_1.v" ORIG_REF_NAME="kalman_filter_top_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="23" LogicLUT="23"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_20_1_fu_192" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_20_1">
+    <SubModules count="3">flow_control_loop_pipe_sequential_init_U mul_32s_32ns_48_2_1_U6 mul_32s_32ns_48_2_1_U8</SubModules>
+    <Resources DSP="8" FF="409" LUT="175" LogicLUT="172" SRL="3"/>
+    <LocalResources FF="369" LUT="103" LogicLUT="100" SRL="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_20_1_fu_192/flow_control_loop_pipe_sequential_init_U" BINDMODULE="kalman_filter_top_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_20_1.v" ORIG_REF_NAME="kalman_filter_top_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="10" LogicLUT="10"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_20_1_fu_192/mul_32s_32ns_48_2_1_U6" BINDMODULE="kalman_filter_top_mul_32s_32ns_48_2_1" DEPTH="2" FILE_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_20_1.v" ORIG_REF_NAME="kalman_filter_top_mul_32s_32ns_48_2_1">
+    <Resources DSP="4" FF="19" LUT="31" LogicLUT="31"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_20_1_fu_192/mul_32s_32ns_48_2_1_U8" BINDMODULE="kalman_filter_top_mul_32s_32ns_48_2_1" DEPTH="2" FILE_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_20_1.v" ORIG_REF_NAME="kalman_filter_top_mul_32s_32ns_48_2_1">
+    <Resources DSP="4" FF="19" LUT="31" LogicLUT="31"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4_fu_204" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4">
+    <SubModules count="5">flow_control_loop_pipe_sequential_init_U mul_32s_32ns_48_2_1_U21 mul_32s_32ns_48_2_1_U22 mul_32s_32ns_48_2_1_U25 mul_32s_32ns_48_2_1_U26</SubModules>
+    <Resources DSP="16" FF="306" LUT="276" LogicLUT="276"/>
+    <LocalResources FF="229" LUT="121" LogicLUT="121"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4_fu_204/flow_control_loop_pipe_sequential_init_U" BINDMODULE="kalman_filter_top_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4.v" ORIG_REF_NAME="kalman_filter_top_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="25" LogicLUT="25"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4_fu_204/mul_32s_32ns_48_2_1_U21" BINDMODULE="kalman_filter_top_mul_32s_32ns_48_2_1" DEPTH="2" FILE_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4.v" ORIG_REF_NAME="kalman_filter_top_mul_32s_32ns_48_2_1">
+    <Resources DSP="4" FF="18" LUT="34" LogicLUT="34"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4_fu_204/mul_32s_32ns_48_2_1_U22" BINDMODULE="kalman_filter_top_mul_32s_32ns_48_2_1" DEPTH="2" FILE_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4.v" ORIG_REF_NAME="kalman_filter_top_mul_32s_32ns_48_2_1">
+    <Resources DSP="4" FF="19" LUT="32" LogicLUT="32"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4_fu_204/mul_32s_32ns_48_2_1_U25" BINDMODULE="kalman_filter_top_mul_32s_32ns_48_2_1" DEPTH="2" FILE_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4.v" ORIG_REF_NAME="kalman_filter_top_mul_32s_32ns_48_2_1">
+    <Resources DSP="4" FF="19" LUT="32" LogicLUT="32"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4_fu_204/mul_32s_32ns_48_2_1_U26" BINDMODULE="kalman_filter_top_mul_32s_32ns_48_2_1" DEPTH="2" FILE_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4.v" ORIG_REF_NAME="kalman_filter_top_mul_32s_32ns_48_2_1">
+    <Resources DSP="4" FF="19" LUT="32" LogicLUT="32"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7_fu_212" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7">
+    <SubModules count="2">Q_U flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="18" LUT="60" LogicLUT="60"/>
+    <LocalResources FF="15" LUT="40" LogicLUT="40"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7_fu_212/Q_U" BINDMODULE="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7_Q_ROM_AUTO_1R" DEPTH="2" FILE_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7.v" ORIG_REF_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7_Q_ROM_AUTO_1R">
+    <Resources FF="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7_fu_212/flow_control_loop_pipe_sequential_init_U" BINDMODULE="kalman_filter_top_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7.v" ORIG_REF_NAME="kalman_filter_top_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="20" LogicLUT="20"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_44_8_fu_219" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_44_8">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="384" LUT="188" LogicLUT="186" SRL="2"/>
+    <LocalResources FF="382" LUT="180" LogicLUT="178" SRL="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_44_8_fu_219/flow_control_loop_pipe_sequential_init_U" BINDMODULE="kalman_filter_top_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_44_8.v" ORIG_REF_NAME="kalman_filter_top_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="8" LogicLUT="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_52_10_VITIS_LOOP_53_11_fu_233" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_52_10_VITIS_LOOP_53_11">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="425" LUT="424" LogicLUT="421" SRL="3"/>
+    <LocalResources FF="423" LUT="410" LogicLUT="407" SRL="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_52_10_VITIS_LOOP_53_11_fu_233/flow_control_loop_pipe_sequential_init_U" BINDMODULE="kalman_filter_top_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_52_10_VITIS_LOOP_53_11.v" ORIG_REF_NAME="kalman_filter_top_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="14" LogicLUT="14"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_71_13_VITIS_LOOP_72_14_fu_244" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_71_13_VITIS_LOOP_72_14">
+    <SubModules count="3">flow_control_loop_pipe_sequential_init_U mul_48s_32s_64_5_1_U53 mul_48s_32s_64_5_1_U54</SubModules>
+    <Resources DSP="12" FF="204" LUT="154" LogicLUT="148" SRL="6"/>
+    <LocalResources DSP="1" FF="104" LUT="45" LogicLUT="39" SRL="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_71_13_VITIS_LOOP_72_14_fu_244/flow_control_loop_pipe_sequential_init_U" BINDMODULE="kalman_filter_top_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_71_13_VITIS_LOOP_72_14.v" ORIG_REF_NAME="kalman_filter_top_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="15" LogicLUT="15"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_71_13_VITIS_LOOP_72_14_fu_244/mul_48s_32s_64_5_1_U53" BINDMODULE="kalman_filter_top_mul_48s_32s_64_5_1" DEPTH="2" FILE_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_71_13_VITIS_LOOP_72_14.v" ORIG_REF_NAME="kalman_filter_top_mul_48s_32s_64_5_1">
+    <Resources DSP="6" FF="49" LUT="62" LogicLUT="62"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_71_13_VITIS_LOOP_72_14_fu_244/mul_48s_32s_64_5_1_U54" BINDMODULE="kalman_filter_top_mul_48s_32s_64_5_1" DEPTH="2" FILE_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_71_13_VITIS_LOOP_72_14.v" ORIG_REF_NAME="kalman_filter_top_mul_48s_32s_64_5_1">
+    <Resources DSP="5" FF="49" LUT="32" LogicLUT="32"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_82_17_fu_254" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_82_17">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="504" LUT="473" LogicLUT="470" SRL="3"/>
+    <LocalResources FF="502" LUT="333" LogicLUT="330" SRL="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_82_17_fu_254/flow_control_loop_pipe_sequential_init_U" BINDMODULE="kalman_filter_top_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_82_17.v" ORIG_REF_NAME="kalman_filter_top_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="140" LogicLUT="140"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_89_19_VITIS_LOOP_90_20_fu_277" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_89_19_VITIS_LOOP_90_20">
+    <SubModules count="3">flow_control_loop_pipe_sequential_init_U mul_17ns_32s_48_2_1_U80 mul_17ns_32s_48_2_1_U81</SubModules>
+    <Resources DSP="4" FF="62" LUT="61" LogicLUT="55" SRL="6"/>
+    <LocalResources DSP="1" FF="59" LUT="43" LogicLUT="37" SRL="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_89_19_VITIS_LOOP_90_20_fu_277/flow_control_loop_pipe_sequential_init_U" BINDMODULE="kalman_filter_top_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_89_19_VITIS_LOOP_90_20.v" ORIG_REF_NAME="kalman_filter_top_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="18" LogicLUT="18"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_89_19_VITIS_LOOP_90_20_fu_277/mul_17ns_32s_48_2_1_U80" BINDMODULE="kalman_filter_top_mul_17ns_32s_48_2_1" DEPTH="2" FILE_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_89_19_VITIS_LOOP_90_20.v" ORIG_REF_NAME="kalman_filter_top_mul_17ns_32s_48_2_1">
+    <Resources DSP="2" FF="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_89_19_VITIS_LOOP_90_20_fu_277/mul_17ns_32s_48_2_1_U81" BINDMODULE="kalman_filter_top_mul_17ns_32s_48_2_1" DEPTH="2" FILE_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_89_19_VITIS_LOOP_90_20.v" ORIG_REF_NAME="kalman_filter_top_mul_17ns_32s_48_2_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_98_22_VITIS_LOOP_99_23_fu_285" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_98_22_VITIS_LOOP_99_23">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="17" LUT="20" LogicLUT="20"/>
+    <LocalResources FF="15"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_98_22_VITIS_LOOP_99_23_fu_285/flow_control_loop_pipe_sequential_init_U" BINDMODULE="kalman_filter_top_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_98_22_VITIS_LOOP_99_23.v" ORIG_REF_NAME="kalman_filter_top_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="20" LogicLUT="20"/>
+  </RtlModule>
+  <RtlModule CELL="inst/hostmem_m_axi_U" BINDMODULE="kalman_filter_top_hostmem_m_axi" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_hostmem_m_axi">
+    <Resources BRAM="1" FF="968" LUT="678" LogicLUT="506" RAMB18="1" SRL="172"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mul_32s_17ns_48_2_1_U104" BINDMODULE="kalman_filter_top_mul_32s_17ns_48_2_1" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_mul_32s_17ns_48_2_1">
+    <Resources DSP="2" FF="17"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mul_32s_17ns_48_2_1_U105" BINDMODULE="kalman_filter_top_mul_32s_17ns_48_2_1" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_mul_32s_17ns_48_2_1">
+    <Resources DSP="2" FF="17"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mul_32s_17ns_48_2_1_U106" BINDMODULE="kalman_filter_top_mul_32s_17ns_48_2_1" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_mul_32s_17ns_48_2_1">
+    <Resources DSP="2" FF="17"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mul_32s_17ns_48_2_1_U107" BINDMODULE="kalman_filter_top_mul_32s_17ns_48_2_1" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_mul_32s_17ns_48_2_1">
+    <Resources DSP="2" FF="17"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mul_32s_32s_48_2_1_U98" BINDMODULE="kalman_filter_top_mul_32s_32s_48_2_1" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_mul_32s_32s_48_2_1">
+    <Resources DSP="4" FF="34" LUT="31" LogicLUT="31"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mul_32s_32s_48_2_1_U99" BINDMODULE="kalman_filter_top_mul_32s_32s_48_2_1" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_mul_32s_32s_48_2_1">
+    <Resources DSP="4" FF="34" LUT="31" LogicLUT="31"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sdiv_48ns_32s_32_52_seq_1_U100" BINDMODULE="kalman_filter_top_sdiv_48ns_32s_32_52_seq_1" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_sdiv_48ns_32s_32_52_seq_1">
+    <Resources FF="223" LUT="183" LogicLUT="183"/>
+    <LocalResources FF="64" LUT="32" LogicLUT="32"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sdiv_48ns_32s_32_52_seq_1_U103" BINDMODULE="kalman_filter_top_sdiv_48ns_32s_32_52_seq_1" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_sdiv_48ns_32s_32_52_seq_1">
+    <Resources FF="223" LUT="183" LogicLUT="183"/>
+    <LocalResources FF="64" LUT="32" LogicLUT="32"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sdiv_49ns_32s_32_53_seq_1_U101" BINDMODULE="kalman_filter_top_sdiv_49ns_32s_32_53_seq_1" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_sdiv_49ns_32s_32_53_seq_1">
+    <Resources FF="228" LUT="185" LogicLUT="185"/>
+    <LocalResources FF="65" LUT="33" LogicLUT="33"/>
+  </RtlModule>
+  <RtlModule CELL="inst/sdiv_49ns_32s_32_53_seq_1_U102" BINDMODULE="kalman_filter_top_sdiv_49ns_32s_32_53_seq_1" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_sdiv_49ns_32s_32_53_seq_1">
+    <Resources FF="315" LUT="446" LogicLUT="444" SRL="2"/>
+    <LocalResources FF="98" LUT="128" LogicLUT="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/temp_V_U" BINDMODULE="kalman_filter_top_temp_V_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="kalman_filter_top.v" ORIG_REF_NAME="kalman_filter_top_temp_V_RAM_AUTO_1R1W">
+    <Resources FF="32" LUT="32" LUTRAM="32"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="6.617" DATAPATH_LOGIC_DELAY="4.849" DATAPATH_NET_DELAY="1.768" ENDPOINT_PIN="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U98/dout_reg/PCIN[0]" LOGIC_LEVELS="2" MAX_FANOUT="133" SLACK="1.899" STARTPOINT_PIN="bd_0_i/hls_inst/inst/ap_CS_fsm_reg[1]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_CS_fsm_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1461"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_52_10_VITIS_LOOP_53_11_fu_233/tmp_product_i_16__7" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="331"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U98/tmp_product" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="24"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U98/dout_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="24"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.617" DATAPATH_LOGIC_DELAY="4.849" DATAPATH_NET_DELAY="1.768" ENDPOINT_PIN="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U98/dout_reg/PCIN[10]" LOGIC_LEVELS="2" MAX_FANOUT="133" SLACK="1.899" STARTPOINT_PIN="bd_0_i/hls_inst/inst/ap_CS_fsm_reg[1]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_CS_fsm_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1461"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_52_10_VITIS_LOOP_53_11_fu_233/tmp_product_i_16__7" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="331"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U98/tmp_product" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="24"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U98/dout_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="24"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.617" DATAPATH_LOGIC_DELAY="4.849" DATAPATH_NET_DELAY="1.768" ENDPOINT_PIN="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U98/dout_reg/PCIN[11]" LOGIC_LEVELS="2" MAX_FANOUT="133" SLACK="1.899" STARTPOINT_PIN="bd_0_i/hls_inst/inst/ap_CS_fsm_reg[1]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_CS_fsm_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1461"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_52_10_VITIS_LOOP_53_11_fu_233/tmp_product_i_16__7" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="331"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U98/tmp_product" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="24"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U98/dout_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="24"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.617" DATAPATH_LOGIC_DELAY="4.849" DATAPATH_NET_DELAY="1.768" ENDPOINT_PIN="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U98/dout_reg/PCIN[12]" LOGIC_LEVELS="2" MAX_FANOUT="133" SLACK="1.899" STARTPOINT_PIN="bd_0_i/hls_inst/inst/ap_CS_fsm_reg[1]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_CS_fsm_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1461"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_52_10_VITIS_LOOP_53_11_fu_233/tmp_product_i_16__7" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="331"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U98/tmp_product" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="24"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U98/dout_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="24"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.617" DATAPATH_LOGIC_DELAY="4.849" DATAPATH_NET_DELAY="1.768" ENDPOINT_PIN="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U98/dout_reg/PCIN[13]" LOGIC_LEVELS="2" MAX_FANOUT="133" SLACK="1.899" STARTPOINT_PIN="bd_0_i/hls_inst/inst/ap_CS_fsm_reg[1]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_CS_fsm_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1461"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/grp_kalman_filter_top_Pipeline_VITIS_LOOP_52_10_VITIS_LOOP_53_11_fu_233/tmp_product_i_16__7" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="331"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U98/tmp_product" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="24"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U98/dout_reg" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="24"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/kalman_filter_top_design_analysis_synth.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/kalman_filter_top_failfast_synth.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/kalman_filter_top_timing_synth.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/kalman_filter_top_timing_paths_synth.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/kalman_filter_top_utilization_synth.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/kalman_filter_top_utilization_hierarchical_synth.rpt"/>
+</VivadoReportFiles>
+</profile>

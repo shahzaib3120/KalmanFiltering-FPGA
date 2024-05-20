@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="kalman.cpp" path="/home/shahlarious/FPGA/Vivado/KalmanFiltering/kalman_hls/kalman.cpp"/>
+    <originFiles name="kalman.h" path="/home/shahlarious/FPGA/Vivado/KalmanFiltering/kalman_hls/kalman.h"/>
+  </source>
+  <testbench>
+    <originFiles name="kalman_tb.cpp" path="/home/shahlarious/FPGA/Vivado/KalmanFiltering/kalman_hls/kalman_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

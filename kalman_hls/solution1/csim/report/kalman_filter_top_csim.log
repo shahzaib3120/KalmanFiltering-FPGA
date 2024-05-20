@@ -1,0 +1,24 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../kalman_tb.cpp in debug mode
+   Compiling ../../../kalman.cpp in debug mode
+   Generating csim.exe
+Measurement: [2.5, 1.5] State Estimate: [2.29164, 1.37498] Expected State: [2.38635, 1.43181]
+Measurement: [3, 2] State Estimate: [2.81522, 1.83696] Expected State: [3.05066, 2.011]
+Test case 1 failed!
+Measurement: [3.5, 2.5] State Estimate: [3.76778, 2.75928] Expected State: [3.54765, 2.51651]
+Test case 2 failed!
+Measurement: [4, 3] State Estimate: [4.015, 3.01555] Expected State: [4.02812, 3.01083]
+Measurement: [4.5, 3.5] State Estimate: [4.51929, 3.51927] Expected State: [4.51318, 3.5054]
+Measurement: [5, 4] State Estimate: [5.0139, 4.0139] Expected State: [5.005, 4.00217]
+Measurement: [5.5, 4.5] State Estimate: [5.51106, 4.51106] Expected State: [5.50143, 4.50067]
+Measurement: [6, 5] State Estimate: [6.0092, 5.0092] Expected State: [6.00018, 5.00012]
+Measurement: [6.5, 5.5] State Estimate: [6.50787, 5.50787] Expected State: [6.49988, 5.49997]
+Measurement: [7, 6] State Estimate: [7.00687, 6.00687] Expected State: [6.99988, 5.99995]
+Measurement: [7.5, 6.5] State Estimate: [7.5061, 6.5061] Expected State: [7.49992, 6.49997]
+Measurement: [8, 7] State Estimate: [8.00545, 7.00545] Expected State: [7.99995, 6.99998]
+Measurement: [8.5, 7.5] State Estimate: [8.50497, 7.50497] Expected State: [8.49998, 7.49998]
+Measurement: [9, 8] State Estimate: [9.00455, 8.00455] Expected State: [8.99998, 7.99998]
+Some test cases failed.
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

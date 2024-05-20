@@ -1,0 +1,42 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:678:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:692:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:706:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="kalman_hls/kalman.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="kalman_filter" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/shahlarious/FPGA/Vivado/KalmanFiltering/kalman_hls/solution1/csynth.tcl:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="kalman_filter_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=kalman_filter_top" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="kalman_hls/kalman.cpp:114:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="kalman_filter_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = return bundle = CONTROL_BUS" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="kalman_hls/kalman.cpp:115:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="kalman_filter_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = z bundle = CONTROL_BUS" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="kalman_hls/kalman.cpp:116:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="kalman_filter_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = x bundle = CONTROL_BUS" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="kalman_hls/kalman.cpp:117:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="kalman_filter_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = P bundle = CONTROL_BUS" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="kalman_hls/kalman.cpp:119:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="kalman_filter_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi offset = slave port = x bundle = hostmem depth = 128" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="kalman_hls/kalman.cpp:120:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="kalman_filter_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi offset = slave port = P bundle = hostmem depth = 128" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="kalman_hls/kalman.cpp:148:5" msg_body="Inlining function 'kalman_filter(ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [4], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [4], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [2], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [4], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [4])' into 'kalman_filter_top(ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [4])'">
+        <args Callee="kalman_filter(ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [4], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [4], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [2], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [4], ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [4])" Caller="kalman_filter_top(ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [4])"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="kalman_hls/kalman.cpp:113:0" msg_body="Aggregating maxi variable 'P' with compact=none mode in 32-bits">
+        <args AggregateTypeName="compact=none" Bitwidth="32" HwTyName="maxi" Name="P"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

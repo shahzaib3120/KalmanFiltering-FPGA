@@ -1,0 +1,158 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: kalman_hls/kalman.cpp, Line: 148, Column: 5 }
+Function:        _Z17kalman_filter_topP8ap_fixedILi32ELi16EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA4_S2_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'kalman_filter(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [4], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [4], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [4], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [4])'
+    DebugLoc:        { File: kalman_hls/kalman.cpp, Line: 14, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'kalman_filter_top(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [4])'
+    DebugLoc:        { File: kalman_hls/kalman.cpp, Line: 113, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: kalman_hls/kalman.cpp, Line: 113, Column: 0 }
+Function:        _Z17kalman_filter_topP8ap_fixedILi32ELi16EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA4_S2_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        maxi
+  - String:          ' variable '''
+  - Name:            P
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=none'
+  - String:          ' mode in '
+  - Bitwidth:        '32'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: kalman_hls/kalman.cpp, Line: 151, Column: 23 }
+Function:        _Z17kalman_filter_topP8ap_fixedILi32ELi16EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA4_S2_
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.inc.store.8
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        P1seq
+  - String:          ' '
+  - ArrayName:       P
+  - String:          ' '
+  - BundleName:      hostmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_151_1
+  - String:          ' '
+  - LoopLoc:         'kalman_hls/kalman.cpp:151:23'
+  - String:          ' '
+  - Function:        'kalman_filter_top(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [4])'
+    DebugLoc:        { File: kalman_hls/kalman.cpp, Line: 113, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: kalman_hls/kalman.cpp, Line: 151, Column: 23 }
+Function:        _Z17kalman_filter_topP8ap_fixedILi32ELi16EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA4_S2_
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '4'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          VITIS_LOOP_154_2.store.7
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        xseq
+  - String:          ' '
+  - ArrayName:       x
+  - String:          ' '
+  - BundleName:      hostmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_151_1
+  - String:          ' '
+  - LoopLoc:         'kalman_hls/kalman.cpp:151:23'
+  - String:          ' '
+  - Function:        'kalman_filter_top(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [4])'
+    DebugLoc:        { File: kalman_hls/kalman.cpp, Line: 113, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: kalman_hls/kalman.cpp, Line: 151, Column: 23 }
+Function:        _Z17kalman_filter_topP8ap_fixedILi32ELi16EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA4_S2_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        P1seq
+  - String:          ' '
+  - ArrayName:       P
+  - String:          ' '
+  - BundleName:      hostmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_154_2
+  - String:          ' '
+  - LoopLoc:         'kalman_hls/kalman.cpp:154:27'
+  - String:          ' '
+  - Function:        'kalman_filter_top(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [4])'
+    DebugLoc:        { File: kalman_hls/kalman.cpp, Line: 113, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: kalman_hls/kalman.cpp, Line: 151, Column: 23 }
+Function:        _Z17kalman_filter_topP8ap_fixedILi32ELi16EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA4_S2_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        xseq
+  - String:          ' '
+  - ArrayName:       x
+  - String:          ' '
+  - BundleName:      hostmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_151_1
+  - String:          ' '
+  - LoopLoc:         'kalman_hls/kalman.cpp:151:23'
+  - String:          ' '
+  - Function:        'kalman_filter_top(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [4])'
+    DebugLoc:        { File: kalman_hls/kalman.cpp, Line: 113, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            BurstConflict
+DebugLoc:        { File: kalman_hls/kalman.cpp, Line: 151, Column: 23 }
+Function:        _Z17kalman_filter_topP8ap_fixedILi32ELi16EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PA4_S2_
+Args:            
+  - String:          'Could not burst due to multiple potential '
+  - Direction:       writes
+  - String:          ' to the same bundle in the same region.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      hostmem
+  - String:          ' '
+  - Function:        'kalman_filter_top(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [4])'
+    DebugLoc:        { File: kalman_hls/kalman.cpp, Line: 113, Column: 0 }
+  - String:          ' '
+...

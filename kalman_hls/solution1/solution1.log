@@ -1,0 +1,704 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 10.05 seconds; current allocated memory: 227.148 MB.
+INFO: [HLS 200-10] Analyzing design file 'kalman_hls/kalman.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 4.85 seconds. CPU system time: 0.66 seconds. Elapsed time: 7.99 seconds; current allocated memory: 227.367 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'kalman_filter(ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [4], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [4], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [4], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [4])' into 'kalman_filter_top(ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [4])' (kalman_hls/kalman.cpp:148:5)
+INFO: [HLS 214-241] Aggregating maxi variable 'P' with compact=none mode in 32-bits (kalman_hls/kalman.cpp:113:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.66 seconds. CPU system time: 0.51 seconds. Elapsed time: 5.46 seconds; current allocated memory: 228.246 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 228.246 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.09 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.43 seconds; current allocated memory: 240.203 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 253.559 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_20_1' (kalman_hls/kalman.cpp:20) in function 'kalman_filter_top' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_28_4' (kalman_hls/kalman.cpp:28) in function 'kalman_filter_top' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_37_7' (kalman_hls/kalman.cpp:37) in function 'kalman_filter_top' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_44_8' (kalman_hls/kalman.cpp:44) in function 'kalman_filter_top' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_53_11' (kalman_hls/kalman.cpp:53) in function 'kalman_filter_top' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_72_14' (kalman_hls/kalman.cpp:72) in function 'kalman_filter_top' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_82_17' (kalman_hls/kalman.cpp:83) in function 'kalman_filter_top' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_90_20' (kalman_hls/kalman.cpp:90) in function 'kalman_filter_top' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_99_23' (kalman_hls/kalman.cpp:99) in function 'kalman_filter_top' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_151_1' (kalman_hls/kalman.cpp:151) in function 'kalman_filter_top' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_20_1' (kalman_hls/kalman.cpp:20) in function 'kalman_filter_top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_28_4' (kalman_hls/kalman.cpp:28) in function 'kalman_filter_top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_44_8' (kalman_hls/kalman.cpp:44) in function 'kalman_filter_top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_53_11' (kalman_hls/kalman.cpp:53) in function 'kalman_filter_top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_72_14' (kalman_hls/kalman.cpp:72) in function 'kalman_filter_top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_82_17' (kalman_hls/kalman.cpp:83) in function 'kalman_filter_top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_90_20' (kalman_hls/kalman.cpp:90) in function 'kalman_filter_top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_151_1' (kalman_hls/kalman.cpp:151) in function 'kalman_filter_top' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_22_2' (kalman_hls/kalman.cpp:22) in function 'kalman_filter_top' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_30_5' (kalman_hls/kalman.cpp:30) in function 'kalman_filter_top' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_46_9' (kalman_hls/kalman.cpp:46) in function 'kalman_filter_top' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_55_12' (kalman_hls/kalman.cpp:55) in function 'kalman_filter_top' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_74_15' (kalman_hls/kalman.cpp:75) in function 'kalman_filter_top' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_75_16' (kalman_hls/kalman.cpp:75) in function 'kalman_filter_top' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_83_18' (kalman_hls/kalman.cpp:83) in function 'kalman_filter_top' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_92_21' (kalman_hls/kalman.cpp:92) in function 'kalman_filter_top' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_154_2' (kalman_hls/kalman.cpp:154) in function 'kalman_filter_top' completely with a factor of 4.
+INFO: [XFORM 203-102] Partitioning array 'S_inv.V' (kalman_hls/kalman.cpp:64) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'A' in dimension 2 automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'x_init.V' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'R' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'A.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'A.1' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'A.2' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'A.3' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'x_prior.V' (kalman_hls/kalman.cpp:18) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'y.V' (kalman_hls/kalman.cpp:43) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'S.V' (kalman_hls/kalman.cpp:51) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'S_inv.V.0' (kalman_hls/kalman.cpp:64) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'S_inv.V.1' (kalman_hls/kalman.cpp:64) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'x_init.V' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'R' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'A.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'A.1' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'A.2' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'A.3' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'x_prior.V' (kalman_hls/kalman.cpp:18) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'y.V' (kalman_hls/kalman.cpp:43) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'S.V' (kalman_hls/kalman.cpp:51) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'S_inv.V.0' (kalman_hls/kalman.cpp:64) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'S_inv.V.1' (kalman_hls/kalman.cpp:64) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'R' in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'S.V' (kalman_hls/kalman.cpp:51) in dimension 2 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (kalman_hls/kalman.cpp:53:33) to (kalman_hls/kalman.cpp:53:24) in function 'kalman_filter_top'... converting 7 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.27 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.37 seconds; current allocated memory: 290.336 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_27_3' (kalman_hls/kalman.cpp:28:32) in function 'kalman_filter_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_36_6' (kalman_hls/kalman.cpp:37:32) in function 'kalman_filter_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_52_10' (kalman_hls/kalman.cpp:53:33) in function 'kalman_filter_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_71_13' (kalman_hls/kalman.cpp:72:33) in function 'kalman_filter_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_89_19' (kalman_hls/kalman.cpp:90:33) in function 'kalman_filter_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_98_22' (kalman_hls/kalman.cpp:99:33) in function 'kalman_filter_top'.
+INFO: [HLS 200-472] Inferring partial write operation for 'P_prior.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'P_prior.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'P_init.V' (kalman_hls/kalman.cpp:100:18)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.17 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.2 seconds; current allocated memory: 382.895 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'kalman_filter_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kalman_filter_top_Pipeline_VITIS_LOOP_20_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_20_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, loop 'VITIS_LOOP_20_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.21 seconds; current allocated memory: 384.555 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 384.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'P_prior_V'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_27_3_VITIS_LOOP_28_4'.
+WARNING: [HLS 200-885] The II Violation in module 'kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4' (loop 'VITIS_LOOP_27_3_VITIS_LOOP_28_4'): Unable to schedule 'load' operation ('P_init_V_load_1') on array 'P_init_V' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'P_init_V'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 7, loop 'VITIS_LOOP_27_3_VITIS_LOOP_28_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 385.312 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 385.312 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'P_prior_V'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_36_6_VITIS_LOOP_37_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_36_6_VITIS_LOOP_37_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 385.828 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 385.828 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kalman_filter_top_Pipeline_VITIS_LOOP_44_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_44_8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 7, loop 'VITIS_LOOP_44_8'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 386.293 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 386.293 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kalman_filter_top_Pipeline_VITIS_LOOP_52_10_VITIS_LOOP_53_11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'P_prior_V'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_52_10_VITIS_LOOP_53_11'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 6, loop 'VITIS_LOOP_52_10_VITIS_LOOP_53_11'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 387.453 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 387.453 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kalman_filter_top_Pipeline_VITIS_LOOP_71_13_VITIS_LOOP_72_14' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'P_prior_V'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_71_13_VITIS_LOOP_72_14'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 8, loop 'VITIS_LOOP_71_13_VITIS_LOOP_72_14'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 387.992 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 387.992 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kalman_filter_top_Pipeline_VITIS_LOOP_82_17' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_82_17'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 6, loop 'VITIS_LOOP_82_17'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 388.730 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 388.730 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kalman_filter_top_Pipeline_VITIS_LOOP_89_19_VITIS_LOOP_90_20' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_89_19_VITIS_LOOP_90_20'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, loop 'VITIS_LOOP_89_19_VITIS_LOOP_90_20'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 389.359 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 389.359 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kalman_filter_top_Pipeline_VITIS_LOOP_98_22_VITIS_LOOP_99_23' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'P_prior_V'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_98_22_VITIS_LOOP_99_23'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_98_22_VITIS_LOOP_99_23'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 389.840 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 389.840 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kalman_filter_top_Pipeline_VITIS_LOOP_151_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_151_1'.
+WARNING: [HLS 200-885] The II Violation in module 'kalman_filter_top_Pipeline_VITIS_LOOP_151_1' (loop 'VITIS_LOOP_151_1'): Unable to schedule bus request operation ('hostmem_addr_1_req', kalman_hls/kalman.cpp:156) on port 'hostmem' (kalman_hls/kalman.cpp:156) due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array.
+WARNING: [HLS 200-885] The II Violation in module 'kalman_filter_top_Pipeline_VITIS_LOOP_151_1' (loop 'VITIS_LOOP_151_1'): Unable to schedule bus request operation ('hostmem_addr_2_req', kalman_hls/kalman.cpp:156) on port 'hostmem' (kalman_hls/kalman.cpp:156) due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array.
+WARNING: [HLS 200-885] The II Violation in module 'kalman_filter_top_Pipeline_VITIS_LOOP_151_1' (loop 'VITIS_LOOP_151_1'): Unable to schedule bus request operation ('hostmem_addr_3_req', kalman_hls/kalman.cpp:156) on port 'hostmem' (kalman_hls/kalman.cpp:156) due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array.
+WARNING: [HLS 200-885] The II Violation in module 'kalman_filter_top_Pipeline_VITIS_LOOP_151_1' (loop 'VITIS_LOOP_151_1'): Unable to schedule bus request operation ('hostmem_addr_4_req', kalman_hls/kalman.cpp:156) on port 'hostmem' (kalman_hls/kalman.cpp:156) due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 5, Depth = 12, loop 'VITIS_LOOP_151_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 390.352 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 390.352 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kalman_filter_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.16 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 390.945 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.46 seconds. CPU system time: 0 seconds. Elapsed time: 0.46 seconds; current allocated memory: 391.273 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kalman_filter_top_Pipeline_VITIS_LOOP_20_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kalman_filter_top_Pipeline_VITIS_LOOP_20_1' pipeline 'VITIS_LOOP_20_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32ns_56_2_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kalman_filter_top_Pipeline_VITIS_LOOP_20_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.45 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.56 seconds; current allocated memory: 392.145 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4' pipeline 'VITIS_LOOP_27_3_VITIS_LOOP_28_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32ns_56_2_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.15 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 394.270 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7' pipeline 'VITIS_LOOP_36_6_VITIS_LOOP_37_7' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7'.
+INFO: [RTMG 210-279] Implementing memory 'kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7_Q_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.17 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.25 seconds; current allocated memory: 396.105 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kalman_filter_top_Pipeline_VITIS_LOOP_44_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kalman_filter_top_Pipeline_VITIS_LOOP_44_8' pipeline 'VITIS_LOOP_44_8' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_25ns_56_2_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kalman_filter_top_Pipeline_VITIS_LOOP_44_8'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 397.711 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kalman_filter_top_Pipeline_VITIS_LOOP_52_10_VITIS_LOOP_53_11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kalman_filter_top_Pipeline_VITIS_LOOP_52_10_VITIS_LOOP_53_11' pipeline 'VITIS_LOOP_52_10_VITIS_LOOP_53_11' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_25ns_56_2_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kalman_filter_top_Pipeline_VITIS_LOOP_52_10_VITIS_LOOP_53_11'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 400.078 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kalman_filter_top_Pipeline_VITIS_LOOP_71_13_VITIS_LOOP_72_14' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kalman_filter_top_Pipeline_VITIS_LOOP_71_13_VITIS_LOOP_72_14' pipeline 'VITIS_LOOP_71_13_VITIS_LOOP_72_14' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_56s_32s_80_5_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kalman_filter_top_Pipeline_VITIS_LOOP_71_13_VITIS_LOOP_72_14'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.25 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.28 seconds; current allocated memory: 402.898 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kalman_filter_top_Pipeline_VITIS_LOOP_82_17' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kalman_filter_top_Pipeline_VITIS_LOOP_82_17' pipeline 'VITIS_LOOP_82_17' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_56_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kalman_filter_top_Pipeline_VITIS_LOOP_82_17'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 404.902 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kalman_filter_top_Pipeline_VITIS_LOOP_89_19_VITIS_LOOP_90_20' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kalman_filter_top_Pipeline_VITIS_LOOP_89_19_VITIS_LOOP_90_20' pipeline 'VITIS_LOOP_89_19_VITIS_LOOP_90_20' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_25ns_32s_56_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kalman_filter_top_Pipeline_VITIS_LOOP_89_19_VITIS_LOOP_90_20'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 406.996 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kalman_filter_top_Pipeline_VITIS_LOOP_98_22_VITIS_LOOP_99_23' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kalman_filter_top_Pipeline_VITIS_LOOP_98_22_VITIS_LOOP_99_23' pipeline 'VITIS_LOOP_98_22_VITIS_LOOP_99_23' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kalman_filter_top_Pipeline_VITIS_LOOP_98_22_VITIS_LOOP_99_23'.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 10.02 seconds; current allocated memory: 227.133 MB.
+INFO: [HLS 200-10] Analyzing design file 'kalman_hls/kalman.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 4.48 seconds. CPU system time: 0.56 seconds. Elapsed time: 5.06 seconds; current allocated memory: 227.332 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'kalman_filter(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [4], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [4], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [4], ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [4])' into 'kalman_filter_top(ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 16, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [4])' (kalman_hls/kalman.cpp:148:5)
+INFO: [HLS 214-241] Aggregating maxi variable 'P' with compact=none mode in 32-bits (kalman_hls/kalman.cpp:113:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.44 seconds. CPU system time: 0.4 seconds. Elapsed time: 3.93 seconds; current allocated memory: 228.293 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 228.293 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 241.113 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 256.973 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_20_1' (kalman_hls/kalman.cpp:20) in function 'kalman_filter_top' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_28_4' (kalman_hls/kalman.cpp:28) in function 'kalman_filter_top' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_37_7' (kalman_hls/kalman.cpp:37) in function 'kalman_filter_top' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_44_8' (kalman_hls/kalman.cpp:44) in function 'kalman_filter_top' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_53_11' (kalman_hls/kalman.cpp:53) in function 'kalman_filter_top' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_72_14' (kalman_hls/kalman.cpp:72) in function 'kalman_filter_top' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_82_17' (kalman_hls/kalman.cpp:83) in function 'kalman_filter_top' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_90_20' (kalman_hls/kalman.cpp:90) in function 'kalman_filter_top' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_99_23' (kalman_hls/kalman.cpp:99) in function 'kalman_filter_top' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_151_1' (kalman_hls/kalman.cpp:151) in function 'kalman_filter_top' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_20_1' (kalman_hls/kalman.cpp:20) in function 'kalman_filter_top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_28_4' (kalman_hls/kalman.cpp:28) in function 'kalman_filter_top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_44_8' (kalman_hls/kalman.cpp:44) in function 'kalman_filter_top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_53_11' (kalman_hls/kalman.cpp:53) in function 'kalman_filter_top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_72_14' (kalman_hls/kalman.cpp:72) in function 'kalman_filter_top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_82_17' (kalman_hls/kalman.cpp:83) in function 'kalman_filter_top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_90_20' (kalman_hls/kalman.cpp:90) in function 'kalman_filter_top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_151_1' (kalman_hls/kalman.cpp:151) in function 'kalman_filter_top' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_22_2' (kalman_hls/kalman.cpp:22) in function 'kalman_filter_top' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_30_5' (kalman_hls/kalman.cpp:30) in function 'kalman_filter_top' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_46_9' (kalman_hls/kalman.cpp:46) in function 'kalman_filter_top' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_55_12' (kalman_hls/kalman.cpp:55) in function 'kalman_filter_top' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_74_15' (kalman_hls/kalman.cpp:75) in function 'kalman_filter_top' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_75_16' (kalman_hls/kalman.cpp:75) in function 'kalman_filter_top' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_83_18' (kalman_hls/kalman.cpp:83) in function 'kalman_filter_top' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_92_21' (kalman_hls/kalman.cpp:92) in function 'kalman_filter_top' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_154_2' (kalman_hls/kalman.cpp:154) in function 'kalman_filter_top' completely with a factor of 4.
+INFO: [XFORM 203-102] Partitioning array 'S_inv.V' (kalman_hls/kalman.cpp:64) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'A' in dimension 2 automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'x_init.V' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'R' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'A.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'A.1' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'A.2' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'A.3' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'x_prior.V' (kalman_hls/kalman.cpp:18) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'y.V' (kalman_hls/kalman.cpp:43) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'S.V' (kalman_hls/kalman.cpp:51) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'S_inv.V.0' (kalman_hls/kalman.cpp:64) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'S_inv.V.1' (kalman_hls/kalman.cpp:64) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'x_init.V' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'R' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'A.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'A.1' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'A.2' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'A.3' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'x_prior.V' (kalman_hls/kalman.cpp:18) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'y.V' (kalman_hls/kalman.cpp:43) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'S.V' (kalman_hls/kalman.cpp:51) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'S_inv.V.0' (kalman_hls/kalman.cpp:64) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'S_inv.V.1' (kalman_hls/kalman.cpp:64) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'R' in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'S.V' (kalman_hls/kalman.cpp:51) in dimension 2 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (kalman_hls/kalman.cpp:53:33) to (kalman_hls/kalman.cpp:53:24) in function 'kalman_filter_top'... converting 7 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.28 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.31 seconds; current allocated memory: 294.492 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_27_3' (kalman_hls/kalman.cpp:28:32) in function 'kalman_filter_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_36_6' (kalman_hls/kalman.cpp:37:32) in function 'kalman_filter_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_52_10' (kalman_hls/kalman.cpp:53:33) in function 'kalman_filter_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_71_13' (kalman_hls/kalman.cpp:72:33) in function 'kalman_filter_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_89_19' (kalman_hls/kalman.cpp:90:33) in function 'kalman_filter_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_98_22' (kalman_hls/kalman.cpp:99:33) in function 'kalman_filter_top'.
+INFO: [HLS 200-472] Inferring partial write operation for 'P_prior.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'P_prior.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'P_init.V' (kalman_hls/kalman.cpp:100:18)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.18 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.21 seconds; current allocated memory: 387.832 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'kalman_filter_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kalman_filter_top_Pipeline_VITIS_LOOP_20_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_20_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, loop 'VITIS_LOOP_20_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 389.398 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 389.398 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'P_prior_V'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_27_3_VITIS_LOOP_28_4'.
+WARNING: [HLS 200-885] The II Violation in module 'kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4' (loop 'VITIS_LOOP_27_3_VITIS_LOOP_28_4'): Unable to schedule 'load' operation ('P_init_V_load_1') on array 'P_init_V' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'P_init_V'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 7, loop 'VITIS_LOOP_27_3_VITIS_LOOP_28_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 390.141 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 390.141 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'P_prior_V'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_36_6_VITIS_LOOP_37_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_36_6_VITIS_LOOP_37_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 390.656 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 390.656 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kalman_filter_top_Pipeline_VITIS_LOOP_44_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_44_8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 6, loop 'VITIS_LOOP_44_8'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 391.152 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 391.152 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kalman_filter_top_Pipeline_VITIS_LOOP_52_10_VITIS_LOOP_53_11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'P_prior_V'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_52_10_VITIS_LOOP_53_11'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 6, loop 'VITIS_LOOP_52_10_VITIS_LOOP_53_11'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 392.281 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 392.281 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kalman_filter_top_Pipeline_VITIS_LOOP_71_13_VITIS_LOOP_72_14' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'P_prior_V'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_71_13_VITIS_LOOP_72_14'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 8, loop 'VITIS_LOOP_71_13_VITIS_LOOP_72_14'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 392.812 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 392.812 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kalman_filter_top_Pipeline_VITIS_LOOP_82_17' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_82_17'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 6, loop 'VITIS_LOOP_82_17'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 393.551 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 393.551 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kalman_filter_top_Pipeline_VITIS_LOOP_89_19_VITIS_LOOP_90_20' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_89_19_VITIS_LOOP_90_20'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, loop 'VITIS_LOOP_89_19_VITIS_LOOP_90_20'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 394.199 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 394.199 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kalman_filter_top_Pipeline_VITIS_LOOP_98_22_VITIS_LOOP_99_23' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'P_prior_V'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_98_22_VITIS_LOOP_99_23'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_98_22_VITIS_LOOP_99_23'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 394.664 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 394.664 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kalman_filter_top_Pipeline_VITIS_LOOP_151_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_151_1'.
+WARNING: [HLS 200-885] The II Violation in module 'kalman_filter_top_Pipeline_VITIS_LOOP_151_1' (loop 'VITIS_LOOP_151_1'): Unable to schedule bus request operation ('hostmem_addr_1_req', kalman_hls/kalman.cpp:156) on port 'hostmem' (kalman_hls/kalman.cpp:156) due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array.
+WARNING: [HLS 200-885] The II Violation in module 'kalman_filter_top_Pipeline_VITIS_LOOP_151_1' (loop 'VITIS_LOOP_151_1'): Unable to schedule bus request operation ('hostmem_addr_2_req', kalman_hls/kalman.cpp:156) on port 'hostmem' (kalman_hls/kalman.cpp:156) due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array.
+WARNING: [HLS 200-885] The II Violation in module 'kalman_filter_top_Pipeline_VITIS_LOOP_151_1' (loop 'VITIS_LOOP_151_1'): Unable to schedule bus request operation ('hostmem_addr_3_req', kalman_hls/kalman.cpp:156) on port 'hostmem' (kalman_hls/kalman.cpp:156) due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array.
+WARNING: [HLS 200-885] The II Violation in module 'kalman_filter_top_Pipeline_VITIS_LOOP_151_1' (loop 'VITIS_LOOP_151_1'): Unable to schedule bus request operation ('hostmem_addr_4_req', kalman_hls/kalman.cpp:156) on port 'hostmem' (kalman_hls/kalman.cpp:156) due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 5, Depth = 12, loop 'VITIS_LOOP_151_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 395.199 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 395.199 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kalman_filter_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.15 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 395.488 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.42 seconds. CPU system time: 0 seconds. Elapsed time: 0.43 seconds; current allocated memory: 396.012 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kalman_filter_top_Pipeline_VITIS_LOOP_20_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kalman_filter_top_Pipeline_VITIS_LOOP_20_1' pipeline 'VITIS_LOOP_20_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32ns_48_2_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kalman_filter_top_Pipeline_VITIS_LOOP_20_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.44 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.45 seconds; current allocated memory: 396.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4' pipeline 'VITIS_LOOP_27_3_VITIS_LOOP_28_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32ns_48_2_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kalman_filter_top_Pipeline_VITIS_LOOP_27_3_VITIS_LOOP_28_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 399.023 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7' pipeline 'VITIS_LOOP_36_6_VITIS_LOOP_37_7' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7'.
+INFO: [RTMG 210-279] Implementing memory 'kalman_filter_top_kalman_filter_top_Pipeline_VITIS_LOOP_36_6_VITIS_LOOP_37_7_Q_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.17 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 400.938 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kalman_filter_top_Pipeline_VITIS_LOOP_44_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kalman_filter_top_Pipeline_VITIS_LOOP_44_8' pipeline 'VITIS_LOOP_44_8' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_17ns_48_2_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kalman_filter_top_Pipeline_VITIS_LOOP_44_8'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 402.457 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kalman_filter_top_Pipeline_VITIS_LOOP_52_10_VITIS_LOOP_53_11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kalman_filter_top_Pipeline_VITIS_LOOP_52_10_VITIS_LOOP_53_11' pipeline 'VITIS_LOOP_52_10_VITIS_LOOP_53_11' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_17ns_48_2_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kalman_filter_top_Pipeline_VITIS_LOOP_52_10_VITIS_LOOP_53_11'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0 seconds. Elapsed time: 0.22 seconds; current allocated memory: 404.840 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kalman_filter_top_Pipeline_VITIS_LOOP_71_13_VITIS_LOOP_72_14' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kalman_filter_top_Pipeline_VITIS_LOOP_71_13_VITIS_LOOP_72_14' pipeline 'VITIS_LOOP_71_13_VITIS_LOOP_72_14' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_48s_32s_64_5_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kalman_filter_top_Pipeline_VITIS_LOOP_71_13_VITIS_LOOP_72_14'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.27 seconds. CPU system time: 0 seconds. Elapsed time: 0.28 seconds; current allocated memory: 407.613 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kalman_filter_top_Pipeline_VITIS_LOOP_82_17' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kalman_filter_top_Pipeline_VITIS_LOOP_82_17' pipeline 'VITIS_LOOP_82_17' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_48_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_42_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kalman_filter_top_Pipeline_VITIS_LOOP_82_17'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.19 seconds; current allocated memory: 409.633 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kalman_filter_top_Pipeline_VITIS_LOOP_89_19_VITIS_LOOP_90_20' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kalman_filter_top_Pipeline_VITIS_LOOP_89_19_VITIS_LOOP_90_20' pipeline 'VITIS_LOOP_89_19_VITIS_LOOP_90_20' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_17ns_32s_48_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kalman_filter_top_Pipeline_VITIS_LOOP_89_19_VITIS_LOOP_90_20'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 411.727 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kalman_filter_top_Pipeline_VITIS_LOOP_98_22_VITIS_LOOP_99_23' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'kalman_filter_top_Pipeline_VITIS_LOOP_98_22_VITIS_LOOP_99_23' pipeline 'VITIS_LOOP_98_22_VITIS_LOOP_99_23' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kalman_filter_top_Pipeline_VITIS_LOOP_98_22_VITIS_LOOP_99_23'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 413.367 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+Tool Version Limit: 2019.12
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
