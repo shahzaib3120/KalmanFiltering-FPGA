@@ -248,3 +248,4 @@ con
 ----------------End of Script----------------
 
 19:00:01 INFO  : Launch script is exported to file '/home/shahlarious/FPGA/Vivado/KalmanFiltering/kalman_vitis/testKalman_system/_ide/scripts/systemdebugger_testkalman_system_standalone.tcl'
+19:24:41 INFO  : Disconnected from the channel tcfchan#9.

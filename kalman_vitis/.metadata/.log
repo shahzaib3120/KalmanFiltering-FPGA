@@ -5100,3 +5100,9 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-19: Launc
 
 !ENTRY com.xilinx.sdk.utils 1 0 2024-05-21 19:00:01.099
 !MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '5'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-21 19:24:41.427
+!MESSAGE XSCT Command: [disconnect tcfchan#9], Thread: Thread-458
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-05-21 19:24:41.432
+!MESSAGE XSCT command with result: [disconnect tcfchan#9], Result: [null, ]. Thread: Thread-458

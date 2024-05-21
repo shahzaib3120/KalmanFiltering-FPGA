@@ -102,8 +102,8 @@ import matplotlib.pyplot as plt
 
 plt.figure()
 plt.plot(measurements[:, 0], measurements[:, 1], label='Measurements')
+plt.plot(np.array(out_opencv)[:, 0], np.array(out_opencv)[:, 1], '-.',label='OpenCV Kalman filter')
 plt.plot(np.array(out_custom)[:, 0], np.array(out_custom)[:, 1], '--', label='Custom Kalman filter')
-# plt.plot(np.array(out_opencv)[:, 0], np.array(out_opencv)[:, 1], label='OpenCV Kalman filter')
 
 plt.legend()
 plt.show()
