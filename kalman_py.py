@@ -38,10 +38,14 @@ H = np.array([[1.0, 0.0, 0.0, 0.0],
 # Measurements
 # measurements = np.array([[2.0, 1.0], [2.5, 1.5], [3.0, 2.0], [3.5, 2.5], [4.0, 3.0], [4.5, 3.5]])
 
-measurements = []
-for i in range(1, 15):
-    measurements.append([2+i*0.5, 1+i*0.5])
+# measurements = []
+# for i in range(1, 15):
+#     measurements.append([2+i*0.5, 1+i*0.5])
 
+x = np.linspace(0, 2*np.pi, 100)
+measurements = np.array([[i, np.cos(i)] for i in x])
+
+measurements += np.random.normal(0, 0.02, (len(measurements), 2))
 measurements = np.array(measurements)
 
 print("Measurements:")
@@ -98,8 +102,8 @@ import matplotlib.pyplot as plt
 
 plt.figure()
 plt.plot(measurements[:, 0], measurements[:, 1], label='Measurements')
-plt.plot(np.array(out_custom)[:, 0], np.array(out_custom)[:, 1], label='Custom Kalman filter')
-plt.plot(np.array(out_opencv)[:, 0], np.array(out_opencv)[:, 1], label='OpenCV Kalman filter')
+plt.plot(np.array(out_custom)[:, 0], np.array(out_custom)[:, 1], '--', label='Custom Kalman filter')
+# plt.plot(np.array(out_opencv)[:, 0], np.array(out_opencv)[:, 1], label='OpenCV Kalman filter')
 
 plt.legend()
 plt.show()

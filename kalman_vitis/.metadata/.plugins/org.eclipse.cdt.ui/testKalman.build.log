@@ -1,0 +1,64 @@
+18:59:23 **** Incremental Build of configuration Debug for project testKalman ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/shahlarious/FPGA/Vivado/KalmanFiltering/kalman_vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -I/tools/Xilinx/Vitis_HLS/2022.2/include/ -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.cc"
+In file included from /tools/Xilinx/Vitis_HLS/2022.2/include/etc/ap_private.h:52,
+                 from /tools/Xilinx/Vitis_HLS/2022.2/include/ap_common.h:666,
+                 from /tools/Xilinx/Vitis_HLS/2022.2/include/ap_int.h:10,
+                 from ../src/main.cc:8:
+/tools/Xilinx/Vitis_HLS/2022.2/include/hls_half.h:20:2: warning: #warning "Xilinx Floating Point Operator IP core does not provide simulation models for ARM architecture.  Automatically defining HLS_NO_XIL_FPO_LIB in order to avoid this library dependency, although bit-accurate simulation of some functions is no longer possible.  You can make this warning go away by adding this define yourself before including any other files." [-Wcpp]
+   20 | #warning "Xilinx Floating Point Operator IP core does not provide simulation models for ARM architecture.  Automatically defining HLS_NO_XIL_FPO_LIB in order to avoid this library dependency, although bit-accurate simulation of some functions is no longer possible.  You can make this warning go away by adding this define yourself before including any other files."
+      |  ^~~~~~~
+In file included from /tools/Xilinx/Vitis_HLS/2022.2/include/hls_half.h:150,
+                 from /tools/Xilinx/Vitis_HLS/2022.2/include/etc/ap_private.h:52,
+                 from /tools/Xilinx/Vitis_HLS/2022.2/include/ap_common.h:666,
+                 from /tools/Xilinx/Vitis_HLS/2022.2/include/ap_int.h:10,
+                 from ../src/main.cc:8:
+/tools/Xilinx/Vitis_HLS/2022.2/include/hls_half_x_utils.h:578:13: warning: 'bool detail::islessequal(half, half)' defined but not used [-Wunused-function]
+  578 | static bool islessequal(half x, half y) {
+      |             ^~~~~~~~~~~
+In file included from /tools/Xilinx/Vitis_HLS/2022.2/include/ap_int.h:11,
+                 from ../src/main.cc:8:
+/tools/Xilinx/Vitis_HLS/2022.2/include/ap_int_base.h: In constructor 'ap_int_base<_AP_W, _AP_S>::ap_int_base(long int) [with int _AP_W = 32; bool _AP_S = true]':
+/tools/Xilinx/Vitis_HLS/2022.2/include/ap_int_base.h:206:58: note: parameter passing for argument of type 'ap_private<32, true>' changed in GCC 7.1
+  206 |   HLS_CONSTEXPR INLINE ap_int_base(const Type op):Base(op) { Base::V = op; }
+      |                                                          ^
+/tools/Xilinx/Vitis_HLS/2022.2/include/ap_int_base.h:216:3: note: in expansion of macro 'CTOR_FROM_INT'
+  216 |   CTOR_FROM_INT(long, _AP_SIZE_long, true)
+      |   ^~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2022.2/include/ap_int_base.h: In constructor 'ap_int_base<_AP_W, _AP_S>::ap_int_base(int) [with int _AP_W = 1; bool _AP_S = false]':
+/tools/Xilinx/Vitis_HLS/2022.2/include/ap_int_base.h:206:58: note: parameter passing for argument of type 'ap_private<1, false>' changed in GCC 7.1
+  206 |   HLS_CONSTEXPR INLINE ap_int_base(const Type op):Base(op) { Base::V = op; }
+      |                                                          ^
+/tools/Xilinx/Vitis_HLS/2022.2/include/ap_int_base.h:214:3: note: in expansion of macro 'CTOR_FROM_INT'
+  214 |   CTOR_FROM_INT(int, _AP_SIZE_int, true)
+      |   ^~~~~~~~~~~~~
+In file included from /tools/Xilinx/Vitis_HLS/2022.2/include/ap_int.h:10,
+                 from ../src/main.cc:8:
+/tools/Xilinx/Vitis_HLS/2022.2/include/ap_common.h: In constructor 'ssdm_int_sim<_AP_W, _AP_S>::ssdm_int_sim(ap_private<_AP_W, _AP_S>) [with int _AP_W = 32; bool _AP_S = true]':
+/tools/Xilinx/Vitis_HLS/2022.2/include/ap_common.h:662:17: note: parameter passing for argument of type 'ap_private<32, true>' changed in GCC 7.1
+  662 |   HLS_CONSTEXPR ssdm_int_sim(ap_private<_AP_W, _AP_S> o):V(o){}
+      |                 ^~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2022.2/include/ap_common.h: In constructor 'ssdm_int_sim<_AP_W, _AP_S>::ssdm_int_sim(ap_private<_AP_W, _AP_S>) [with int _AP_W = 1; bool _AP_S = false]':
+/tools/Xilinx/Vitis_HLS/2022.2/include/ap_common.h:662:17: note: parameter passing for argument of type 'ap_private<1, false>' changed in GCC 7.1
+Finished building: ../src/main.cc
+ 
+Building target: testKalman.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/shahlarious/FPGA/Vivado/KalmanFiltering/kalman_vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "testKalman.elf" ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: testKalman.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size testKalman.elf  |tee "testKalman.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 588373	   2848	  29152	 620373	  97755	testKalman.elf
+Finished building: testKalman.elf.size
+ 
+
+18:59:26 Build Finished (took 2s.532ms)
+
