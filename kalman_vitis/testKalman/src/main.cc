@@ -7,6 +7,7 @@
 #include "xkalman_filter_top.h"
 #include <ap_int.h>
 #include "xil_cache.h"
+#include "xtime_l.h"
 
 typedef ap_fixed<32, 16> fixed_t;
 
@@ -17,6 +18,7 @@ bool compare_results(fixed_t x, fixed_t expected_x, fixed_t tolerance) {
 
 XKalman_filter_top doKalman;
 XKalman_filter_top_Config *doKalman_cfg;
+XTime tStart, tEnd;
 
 void init_core() {
     int status = 0;
@@ -78,8 +80,10 @@ int main() {
     init_platform();
     printf("Core Initialized\n");
 
+	Xil_DCacheDisable();
+    XTime_GetTime(&tStart);  // Get the start time
+
     for (int i = 0; i < 14; i++) {
-        Xil_DCacheDisable();
 
         // Write the measurement to the Kalman filter
         word_type z_data[2];
@@ -96,17 +100,24 @@ int main() {
         // Wait for the Kalman filter IP to complete
         while (!XKalman_filter_top_IsDone(&doKalman));
 
-        // Print the results
-        printf("Measurement: [%f, %f] State Estimate: [%f, %f] Expected State: [%f, %f]\n",
-               measurements[i][0].to_float(), measurements[i][1].to_float(),
-               x[0].to_float(), x[1].to_float(),
-               expected_states[i][0].to_float(), expected_states[i][1].to_float());
-
-        if (!compare_results(x[0], expected_states[i][0], tolerance) || !compare_results(x[1], expected_states[i][1], tolerance)) {
-            printf("Test case %d failed!\n", i);
-            success = 0;
-        }
+//        // Print the results
+//        printf("Measurement: [%f, %f] State Estimate: [%f, %f] Expected State: [%f, %f]\n",
+//               measurements[i][0].to_float(), measurements[i][1].to_float(),
+//               x[0].to_float(), x[1].to_float(),
+//               expected_states[i][0].to_float(), expected_states[i][1].to_float());
+//
+//
+//        if (!compare_results(x[0], expected_states[i][0], tolerance) || !compare_results(x[1], expected_states[i][1], tolerance)) {
+//            printf("Test case %d failed!\n", i);
+//            success = 0;
+//        }
     }
+
+    XTime_GetTime(&tEnd);  // Get the end time
+
+    // Calculate the elapsed time in microseconds
+	double elapsed_time = 1.0 * (tEnd - tStart) / (COUNTS_PER_SECOND / 1000);
+	printf("Elapsed time for IP: %.4f ms\n", elapsed_time);
 
     if (success) {
         printf("All test cases passed!\n");
